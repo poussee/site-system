@@ -1,0 +1,67 @@
+import { useState } from 'react';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+
+import { MdMenu, MdClose } from 'react-icons/md';
+
+import * as S from './style';
+
+const Header = () => {
+	const [mobile, setMobile] = useState(true);
+
+	const router = useRouter();
+
+	function handleMenu(e) {
+		setMobile((prev) => !prev);
+	}
+
+	return (
+		<S.Container>
+			<S.Content>
+				<Link href="/">
+					<a>
+						<img src="./assets/Logo-Menu.png" alt="Logo System" />
+					</a>
+				</Link>
+
+				<S.MenuContainer isActive={!mobile}>
+					<Link href="#" onClick={handleMenu}>
+						<a className={router.pathname == '/#' ? 'activeMenu' : ''}>
+							Inicio
+						</a>
+					</Link>{' '}
+					<Link href="#" onClick={handleMenu}>
+						<a className={router.pathname == '/contato' ? 'activeMenu' : ''}>
+							Quem somos
+						</a>
+					</Link>
+					<Link href="#" onClick={handleMenu}>
+						<a className={router.pathname == '/contato' ? 'activeMenu' : ''}>
+							Serviços
+						</a>
+					</Link>
+					<Link href="#" onClick={handleMenu}>
+						<a className={router.pathname == '/contato' ? 'activeMenu' : ''}>
+							Contato
+						</a>
+					</Link>
+					<Link href="#" onClick={handleMenu}>
+						<a className={router.pathname == '/contato' ? 'activeMenu' : ''}>
+							Trabalhe conosco
+						</a>
+					</Link>
+				</S.MenuContainer>
+
+				<S.MenuMobile aria-label="abrir menu" onClick={handleMenu}>
+					{mobile ? (
+						<MdMenu color="#fff" size="32" />
+					) : (
+						<MdClose color="#fff" size="32" />
+					)}
+				</S.MenuMobile>
+			</S.Content>
+		</S.Container>
+	);
+};
+
+export default Header;
