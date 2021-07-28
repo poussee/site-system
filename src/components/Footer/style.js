@@ -20,7 +20,7 @@ export const Container = styled.div`
 		gap: 25px;
 
 		h4 {
-			margin-bottom: 10px;
+			margin-bottom: 20px;
 		}
 	}
 
@@ -54,6 +54,13 @@ export const Content = styled.div`
 	p,
 	ul {
 		margin: 0;
+	}
+
+	.yellowButton {
+		padding: 10px 20px;
+		background: #f8c304;
+		width: fit-content;
+		border-radius: 10px;
 	}
 
 	@media screen and (max-width: 900px) {

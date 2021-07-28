@@ -50,7 +50,7 @@ const Footer = () => {
 				<div className="flex-column">
 					<div>
 						<h4>Trabalhe conosco</h4>
-						<a>Vem ser System</a>
+						<a className="yellowButton">Vem ser System</a>
 					</div>
 					<div>
 						<a>Política de privacidade</a>
