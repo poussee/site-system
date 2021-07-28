@@ -218,11 +218,17 @@ export const formContent = styled.div`
 
 		& > input {
 			border: none;
+			outline: none;
 			border-bottom: 1px solid white;
 			padding-left: 5px;
 			height: 30px;
 			background-color: transparent;
 			color: white;
+		}
+
+		& > input::placeholder {
+			color: white;
+			vertical-align: top;
 		}
 
 		.home-form-textarea {

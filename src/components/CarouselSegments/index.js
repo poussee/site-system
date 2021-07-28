@@ -54,7 +54,7 @@ const SegmentsCarousel = () => {
 							src="/assets/favicons/icone-farmaceutico_Segamentos-atendidos.png"
 							alt="Icone Farmaceutico"
 						/>
-						<p>Farmaceutico</p>
+						<p>Farmacêuticos</p>
 					</S.ItemContainer>
 					<S.ItemContainer>
 						<S.Img
@@ -68,7 +68,7 @@ const SegmentsCarousel = () => {
 							src="/assets/favicons/icone-alimenticio_Segamentos-atendidos.png"
 							alt="Icone Alimenticios"
 						/>
-						<p>Alimenticios</p>
+						<p>Alimentícios</p>
 					</S.ItemContainer>
 					<S.ItemContainer>
 						<S.Img

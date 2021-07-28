@@ -9,7 +9,7 @@ const Footer = () => {
 			<S.Content>
 				<div className="flex-column">
 					<div>
-						<h4>Sobre Nós</h4>
+						<h4>Sobre nós</h4>
 						<p>
 							Há mais de 20 anos, a System inova ao empregar
 							<br /> inteligência de dados na construção de relacionamentos

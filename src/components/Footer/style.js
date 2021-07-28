@@ -61,6 +61,12 @@ export const Content = styled.div`
 		background: #f8c304;
 		width: fit-content;
 		border-radius: 10px;
+		color: black;
+		font-weight: bold;
+	}
+
+	p {
+		margin-bottom: 5px;
 	}
 
 	@media screen and (max-width: 900px) {
