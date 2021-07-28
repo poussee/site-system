@@ -80,8 +80,86 @@ export const CarouselContainer = styled.div`
 
 export const ItemContainer = styled.div`
 	display: flex;
-	flex-direction: column;
-	align-items: center;
+	align-items: flex-start;
+	width: 100%;
+	min-height: 150px;
+	padding: 20px 10px;
+	gap: 10px;
+	color: white;
+	background: black;
+	& > div {
+		width: fit-content;
+	}
+
+	.icon {
+		display: flex;
+		max-width: 50px;
+
+		& > img {
+			width: 100%;
+		}
+	}
+
+	.card-content {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+		width: 70%;
+		& > div {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			width: 100%;
+
+			& > img {
+				width: 30%;
+			}
+		}
+
+		.yellowButton {
+			width: fit-content;
+			padding: 8px 20px;
+			border-radius: 10px;
+			color: white;
+			font-size: 14px;
+			border: 1px solid #f8c304;
+			background-color: #f8c304;
+		}
+
+		.pinkButton {
+			width: fit-content;
+			padding: 8px 20px;
+			border-radius: 10px;
+			color: white;
+			font-size: 14px;
+			border: 1px solid #cb2378;
+			background-color: #cb2378;
+		}
+
+		.blueButton {
+			width: fit-content;
+			padding: 8px 20px;
+			border-radius: 10px;
+			color: white;
+			font-size: 14px;
+			border: 1px solid #0182b0;
+			background-color: #0182b0;
+		}
+
+		.purpleButton {
+			width: fit-content;
+			padding: 8px 20px;
+			border-radius: 10px;
+			color: white;
+			font-size: 14px;
+			border: 1px solid #6c117b;
+			background-color: #6c117b;
+		}
+	}
+
+	p {
+		font-size: 14px;
+	}
 `;
 
 export const Img = styled.img`

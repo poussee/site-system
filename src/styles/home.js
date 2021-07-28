@@ -16,6 +16,10 @@ export const MainContainer = styled.div`
 		width: fit-content;
 		border-radius: 10px;
 	}
+
+	.whiteText {
+		color: white;
+	}
 `;
 
 export const Container = styled.div`
@@ -35,12 +39,30 @@ export const ColumnContent = styled.div`
 	padding: 10px 0;
 	position: relative;
 
-	.whiteText {
-		color: white;
-	}
-
 	@media screen and (max-width: 900px) {
 		padding: 0 20px;
+	}
+
+	.inteligent-solutions {
+		padding-top: 50px;
+
+		.inteligent-solutions-wrapper {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+
+			h2 {
+				color: #cb2378;
+			}
+
+			& > div {
+				width: 50%;
+				margin-top: 5px;
+				max-width: 200px;
+				background-color: #cb2378;
+				height: 2px;
+			}
+		}
 	}
 `;
 
@@ -62,9 +84,10 @@ export const RowContent = styled.div`
 
 export const BannerContainer = styled.div`
 	width: 100%;
-	height: 50vh;
+	height: 60vh;
 	background-image: url(./assets/banners/banner-home.png);
 	background-size: cover;
+	background-position: center;
 	background-repeat: no-repeat;
 `;
 
@@ -82,14 +105,15 @@ export const RelationsContainer = styled.div`
 		padding: 10px 0;
 		position: relative;
 
-		@media screen and (max-width: 900px) {
-			padding: 0 20px;
-		}
-
 		h2 {
 			margin-bottom: -5%;
 			padding-top: 10px;
 			width: fit-content;
+			font-weight: 400;
+		}
+
+		@media screen and (max-width: 900px) {
+			padding: 0 20px;
 		}
 	}
 
@@ -137,6 +161,21 @@ export const RelationsContainer = styled.div`
 			padding-top: 6%;
 		}
 	}
+
+	@media screen and (max-width: 768px) {
+		.relations-content > .relations-wrapper > div:nth-child(1) {
+			min-width: auto;
+			width: 100%;
+			padding-top: 6%;
+		}
+
+		.relations-content > .relations-wrapper > div:nth-child(2) {
+			display: flex;
+			justify-content: center;
+			width: 100%;
+			min-width: auto;
+		}
+	}
 `;
 
 export const formContent = styled.div`
@@ -145,7 +184,7 @@ export const formContent = styled.div`
 	align-items: flex-end;
 	max-width: 980px;
 	height: 100vh;
-	margin: 0 auto;
+	margin: 0 auto 150px auto;
 	justify-content: center;
 	z-index: 400;
 	padding: 10px 0;

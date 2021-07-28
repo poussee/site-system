@@ -30,16 +30,18 @@ export default function Home() {
 				</S.BannerContainer>
 				<S.Container>
 					<S.ColumnContent>
-						<div>
-							<h2>Souções Inteligentes</h2>
-							<div></div>
-						</div>
-						<p>
-							Mais do que recursos tecnológicos, oferecemos serviços
-							<br /> inovadores que elevam os resultados a níveis inéditos.
-						</p>
-						<div>
-							<CarouselSolutions />
+						<div className="inteligent-solutions">
+							<div className="inteligent-solutions-wrapper">
+								<h2>Soluções Inteligentes</h2>
+								<div></div>
+							</div>
+							<p>
+								Mais do que recursos tecnológicos, oferecemos serviços
+								<br /> inovadores que elevam os resultados a níveis inéditos.
+							</p>
+							<div>
+								<CarouselSolutions />
+							</div>
 						</div>
 					</S.ColumnContent>
 				</S.Container>
@@ -54,18 +56,20 @@ export default function Home() {
 										<br /> de se comunicar com pessoas.
 									</h4>
 								</div>
-								<p>
+								<p className="whiteText">
 									Respeito ao cliente aliado às amplas possibilidades da
 									tecnologia: esse é o jeito System de redefinir os
 									relacionamentos entre marcas e consumidores.
 								</p>
-								<p>
+								<p className="whiteText">
 									Somos pioneiros no uso de análise de dados e automação no
 									atendimento. Com personalização e foco em resultados, criamos
 									soluções para atender às necessidades de cada empresa.
 								</p>
 								<Link href="#">
-									<a className="yellowButton">Fale com um especialista</a>
+									<a className="yellowButton whiteText">
+										Conheça nossa história
+									</a>
 								</Link>
 							</div>
 							<div>
