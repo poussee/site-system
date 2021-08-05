@@ -1,6 +1,4 @@
-import LinkButton from '../LinkButton';
 import React from 'react';
-import { useState } from 'react';
 import * as S from './style';
 import Link from 'next/dist/client/link';
 

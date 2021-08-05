@@ -91,7 +91,7 @@ export default function Home() {
 				<S.Container>
 					<S.formContent>
 						<div className="form-image">
-							<Image src={formImage} alt="Icone Sac" quality={100} />
+							<Image src={formImage} alt="Icone Sac" />
 						</div>
 						<div className="form-content">
 							<h2>ENTRE EM CONTATO</h2>
