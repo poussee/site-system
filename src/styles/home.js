@@ -10,13 +10,6 @@ export const MainContainer = styled.div`
 		margin: 0;
 	}
 
-	.yellowButton {
-		padding: 10px 20px;
-		background: #f8c304;
-		width: fit-content;
-		border-radius: 10px;
-	}
-
 	.whiteText {
 		color: white;
 	}
@@ -30,6 +23,7 @@ export const ColumnContent = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: left;
+	width: 95%;
 	max-width: 980px;
 	height: 100%;
 	gap: 20px;
@@ -70,6 +64,7 @@ export const RowContent = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	width: 95%;
 	max-width: 980px;
 	margin: 0 auto;
 	justify-content: space-between;
@@ -99,6 +94,7 @@ export const RelationsContainer = styled.div`
 	background-repeat: no-repeat;
 
 	.relations-content {
+		width: 95%;
 		max-width: 980px;
 		margin: 0 auto;
 		z-index: 400;
@@ -180,17 +176,18 @@ export const RelationsContainer = styled.div`
 
 export const formContent = styled.div`
 	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
+	justify-content: space-between !important;
+	align-items: center;
 	max-width: 980px;
-	height: 100vh;
+	min-height: 650px;
 	margin: 0 auto 150px auto;
 	justify-content: center;
 	z-index: 400;
-	padding: 10px 0;
+	padding: 25px 0;
 	position: relative;
-	background-image: url(./assets/BG_Entre-em-contato_Inteiro.png);
-	background-size: cover;
+	background-image: url(./assets/BG_Entre-em-contato_Preto.png);
+	background-size: 90% 100%;
+	background-position: right;
 	background-repeat: no-repeat;
 
 	h2 {
@@ -205,8 +202,13 @@ export const formContent = styled.div`
 		padding: 0 20px;
 	}
 
-	.form-content {
+	.form-image {
 		width: 45%;
+	}
+
+	.form-content {
+		width: 50%;
+		padding: 0 20px;
 		margin-right: 3%;
 	}
 
@@ -240,6 +242,10 @@ export const formContent = styled.div`
 			gap: 10px;
 			color: white;
 			margin: 10px 0;
+
+			label {
+				text-align: justify;
+			}
 		}
 
 		.home-form-button-container {
@@ -257,8 +263,12 @@ export const formContent = styled.div`
 	}
 
 	@media screen and (max-width: 900px) {
+		justify-content: center !important;
 		padding: 20px;
-		background-position: center;
+		background-position: right;
+		background-size: 90% 100%;
+		background-repeat: no-repeat;
+
 		.form-content {
 			width: 50%;
 			margin-right: 3%;
@@ -266,12 +276,23 @@ export const formContent = styled.div`
 	}
 
 	@media screen and (max-width: 768px) {
-		background-image: url(./assets/BG_Entre-em-contato_Preto.png);
+		background-position: center;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
 		align-items: center;
 		justify-content: center;
 
 		.form-content {
 			width: 95%;
+			padding: 20px 0;
+		}
+
+		.form-image {
+			display: none !important;
+		}
+
+		.home-form-button-container {
+			justify-content: center !important;
 		}
 	}
 `;

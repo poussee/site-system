@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import Image from 'next/dist/client/image';
+
+import logoSystem from '../../../public/assets/Logo-Menu.png';
 
 import { MdMenu, MdClose } from 'react-icons/md';
 
@@ -19,8 +22,13 @@ const Header = () => {
 		<S.Container>
 			<S.Content>
 				<Link href="/">
-					<a>
-						<img src="./assets/Logo-Menu.png" alt="Logo System" />
+					<a className="logo-container">
+						<Image
+							layout="responsive"
+							quality={100}
+							src={logoSystem}
+							alt="Logo System"
+						/>
 					</a>
 				</Link>
 

@@ -1,8 +1,12 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import Button from '../components/Buttons/Yellow-Button';
+import LinkButton from '../components/LinkButton';
 import CarouselSegments from '../components/CarouselSegments';
 import CarouselSolutions from '../components/CarouselSolutions';
+
+import Image from 'next/dist/client/image';
+
+import formImage from '../../public/assets/Imagem_Entre-em-contato.png';
 
 import * as S from '../styles/home';
 
@@ -23,9 +27,9 @@ export default function Home() {
 							Desenvolvemos relacionamentos sólidos aliando
 							<br /> personalização, tecnologia e inteligência de dados.
 						</p>
-						<Link href="#">
-							<a className="yellowButton">Fale com um especialista</a>
-						</Link>
+						<LinkButton className={'yellowButton'} link={'#'}>
+							Fale com um especialista
+						</LinkButton>
 					</S.ColumnContent>
 				</S.BannerContainer>
 				<S.Container>
@@ -66,11 +70,10 @@ export default function Home() {
 									atendimento. Com personalização e foco em resultados, criamos
 									soluções para atender às necessidades de cada empresa.
 								</p>
-								<Link href="#">
-									<a className="yellowButton whiteText">
-										Conheça nossa história
-									</a>
-								</Link>
+
+								<LinkButton className={'yellowButton'} link={'#'}>
+									Conheça nossa história
+								</LinkButton>
 							</div>
 							<div>
 								<img src="./assets/Imagem_Especialistas-em-relacoes-humanas.png" />
@@ -83,6 +86,9 @@ export default function Home() {
 				</S.Container>
 				<S.Container>
 					<S.formContent>
+						<div className="form-image">
+							<Image src={formImage} alt="Icone Sac" quality={100} />
+						</div>
 						<div className="form-content">
 							<h2>ENTRE EM CONTATO</h2>
 							<p>

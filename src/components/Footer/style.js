@@ -24,6 +24,12 @@ export const Container = styled.div`
 		}
 	}
 
+	@media (max-width: 768px) {
+		.flex-column {
+			margin: 20px 0 40px;
+		}
+	}
+
 	p,
 	li {
 		font-size: 14px;
@@ -33,6 +39,7 @@ export const Container = styled.div`
 export const Content = styled.div`
 	display: flex;
 	align-items: flex-start;
+	width: 95%;
 	max-width: 980px;
 	margin: 0 auto;
 	justify-content: space-between;
@@ -40,6 +47,10 @@ export const Content = styled.div`
 	padding: 10px 0;
 	position: relative;
 
+	.img-container {
+		width: 100%;
+		max-width: 130px;
+	}
 	img {
 		width: 170px;
 	}
@@ -58,6 +69,7 @@ export const Content = styled.div`
 
 	.yellowButton {
 		padding: 10px 20px;
+		white-space: nowrap;
 		background: #f8c304;
 		width: fit-content;
 		border-radius: 10px;
@@ -67,6 +79,21 @@ export const Content = styled.div`
 
 	p {
 		margin-bottom: 5px;
+	}
+
+	h4 {
+		font-size: 20px;
+	}
+
+	.footer-socials-wrapper {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+
+		i {
+			font-size: 22px;
+			color: var(--yellow);
+		}
 	}
 
 	@media screen and (max-width: 900px) {

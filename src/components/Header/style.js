@@ -27,6 +27,7 @@ export const Container = styled.div`
 export const Content = styled.div`
 	display: flex;
 	align-items: center;
+	width: 95%;
 	max-width: 980px;
 	margin: 0 auto;
 	justify-content: space-between;
@@ -34,8 +35,11 @@ export const Content = styled.div`
 	padding: 10px 0;
 	position: relative;
 
-	img {
-		width: 170px;
+	.logo-container {
+		width: 20%;
+		padding: 10px 0;
+		min-width: 150px;
+		max-width: 180px;
 	}
 
 	@media screen and (max-width: 900px) {
@@ -49,13 +53,13 @@ export const MenuWrapper = styled.div`
 `;
 
 export const MenuContainer = styled.div`
-	width: 70%;
+	width: 60%;
 
 	a {
 		color: white;
 		text-decoration: none;
 		padding: 5px 10px;
-		font-size: 14px;
+		font-size: 16px;
 	}
 
 	@media screen and (max-width: 900px) {

@@ -84,9 +84,10 @@ export const ItemContainer = styled.div`
 	align-items: center;
 `;
 
-export const Img = styled.img`
+export const ImgContainer = styled.div`
 	max-width: 105px;
+	width: 90px;
 	max-height: 80px;
 	object-fit: contain;
-	margin: 0 5px;
+	margin: 0 5px 20px 5px;
 `;
