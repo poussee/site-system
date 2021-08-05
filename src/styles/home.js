@@ -136,7 +136,7 @@ export const RelationsContainer = styled.div`
 		height: fit-content;
 	}
 
-	.relations-content > .relations-wrapper img {
+	.relations-content > .relations-wrapper .relations-img-holder {
 		width: 100%;
 		max-width: 500px;
 	}

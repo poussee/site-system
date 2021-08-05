@@ -7,6 +7,7 @@ import CarouselSolutions from '../components/CarouselSolutions';
 import Image from 'next/dist/client/image';
 
 import formImage from '../../public/assets/Imagem_Entre-em-contato.png';
+import relationsImage from '../../public/assets/Imagem_Especialistas-em-relacoes-humanas.png';
 
 import * as S from '../styles/home';
 
@@ -75,8 +76,11 @@ export default function Home() {
 									Conheça nossa história
 								</LinkButton>
 							</div>
-							<div>
-								<img src="./assets/Imagem_Especialistas-em-relacoes-humanas.png" />
+							<div className="relations-img-holder">
+								<Image
+									src={relationsImage}
+									alt="Especialistas em relações humanas."
+								/>
 							</div>
 						</div>
 					</div>

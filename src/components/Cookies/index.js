@@ -1,19 +1,24 @@
 import LinkButton from '../LinkButton';
+import React from 'react';
 import { useState } from 'react';
 import * as S from './style';
 import Link from 'next/dist/client/link';
 
 function Cookies() {
-	const [accepted, setAccepted] = useState(
-		sessionStorage.getItem('cookies') ? 'accepted' : ''
-	);
+	const [accepted, setAccepted] = React.useState(false);
+
+	React.useEffect(() => {
+		if (window.sessionStorage.getItem('cookies')) {
+			setAccepted(true);
+		}
+	}, []);
 
 	function acceptPolicy() {
-		sessionStorage.setItem('cookies', 'accept');
-		setAccepted('accept');
+		sessionStorage.setItem('cookies', true);
+		setAccepted(true);
 	}
 
-	return accepted === '' ? (
+	return !accepted ? (
 		<>
 			<S.Container>
 				<S.Content>

@@ -70,19 +70,19 @@ const Footer = () => {
 								target="_blank"
 								href="https://www.facebook.com/SystemInteractBR"
 							>
-								<i class="fab fa-facebook-f"></i>
+								<i className="fab fa-facebook-f"></i>
 							</a>
 							<a
 								target="_blank"
 								href="https://www.instagram.com/oficialsystem/"
 							>
-								<i class="fab fa-instagram"></i>
+								<i className="fab fa-instagram"></i>
 							</a>
 							<a
 								target="_blank"
 								href="https://www.linkedin.com/company/system-interact/"
 							>
-								<i class="fab fa-linkedin-in"></i>
+								<i className="fab fa-linkedin-in"></i>
 							</a>
 						</div>
 					</div>

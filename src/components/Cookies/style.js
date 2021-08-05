@@ -36,6 +36,7 @@ export const Content = styled.div`
 		a {
 			text-decoration: underline;
 			color: black;
+			cursor: pointer;
 		}
 	}
 
@@ -50,6 +51,7 @@ export const Content = styled.div`
 			font-weight: bold;
 			color: var(--pink);
 			font-size: 18px;
+			cursor: pointer;
 		}
 
 		button:nth-child(1) {
