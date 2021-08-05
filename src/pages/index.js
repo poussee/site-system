@@ -6,7 +6,7 @@ import CarouselSolutions from '../components/CarouselSolutions';
 
 import Image from 'next/dist/client/image';
 
-import formImage from '../../public/assets/Imagem_Entre-em-contato.png';
+import formImage from '../../public/assets/Imagem_formulario-min.png';
 import relationsImage from '../../public/assets/Imagem_Especialistas-em-relacoes-humanas.png';
 
 import * as S from '../styles/home';
@@ -91,7 +91,7 @@ export default function Home() {
 				<S.Container>
 					<S.formContent>
 						<div className="form-image">
-							<Image src={formImage} alt="Icone Sac" />
+							<Image src={formImage} alt="Icone Sac" quality={100} />
 						</div>
 						<div className="form-content">
 							<h2>ENTRE EM CONTATO</h2>
