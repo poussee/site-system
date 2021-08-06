@@ -91,10 +91,15 @@ export default function Home() {
 				<S.Container>
 					<S.formContent>
 						<div className="form-image">
-							<Image
+							{/* <Image
 								src={formImage}
 								alt="Rapaz em contato telefonico."
 								quality={100}
+							/> */}
+							<img
+								src="/assets/Imagem_formulario-min.png"
+								alt="Rapaz em contato telefonico."
+								style={{ width: '100%', height: '100%', objectFit: 'cover' }}
 							/>
 						</div>
 						<div className="form-content">
