@@ -94,7 +94,7 @@ const Footer = () => {
 			<S.Content>
 				<p>
 					© System Interact 2021. Todos os direitos reservados. Desenvolvido por
-					AgênciaPoussée.
+					Agência Poussée.
 				</p>
 			</S.Content>
 		</S.Container>
