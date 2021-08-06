@@ -24,14 +24,120 @@ const Footer = () => {
 
 					<div>
 						<h4>Nossas soluções</h4>
-						<div className="flex">
+						<div className="flex our-solutions">
 							<ul>
-								<li>Cobrança</li>
-								<li>Vendas</li>
+								<li>
+									<Link href="#">
+										<a>Cobrança</a>
+									</Link>
+								</li>
+								<li>
+									<Link href="#">
+										<a>Vendas</a>
+									</Link>
+								</li>
+								<li>
+									<Link href="#">
+										<a>SAC</a>
+									</Link>
+								</li>
+								<li>
+									<Link href="#">
+										<a>Retenção</a>
+									</Link>
+								</li>
+								<li>
+									<Link href="#">
+										<a>BackOffice</a>
+									</Link>
+								</li>
+								<li>
+									<Link href="#">
+										<a>Suporte técnico</a>
+									</Link>
+								</li>
+								<li>
+									<Link href="#">
+										<a>Bodyshop</a>
+									</Link>
+								</li>
+								<li>
+									<Link href="#">
+										<a>Infraestrutura</a>
+									</Link>
+								</li>
+								<li>
+									<Link href="#">
+										<a>Human Persona</a>
+									</Link>
+								</li>
+								<li>
+									<Link href="#">
+										<a>UX, CX e CS</a>
+									</Link>
+								</li>
+								<li>
+									<Link href="#">
+										<a>Social Care</a>
+									</Link>
+								</li>
 							</ul>
 							<ul>
-								<li>SAC</li>
-								<li>Mais opções</li>
+								<li>
+									<Link href="#">
+										<a>Door to Door</a>
+									</Link>
+								</li>
+								<li>
+									<Link href="#">
+										<a>Software de CRM</a>
+									</Link>
+								</li>
+								<li>
+									<Link href="#">
+										<a>Plataforma Social</a>
+									</Link>
+								</li>
+								<li>
+									<Link href="#">
+										<a>Chatbot</a>
+									</Link>
+								</li>
+								<li>
+									<Link href="#">
+										<a>Agente Digital</a>
+									</Link>
+								</li>
+								<li>
+									<Link href="#">
+										<a>URA</a>
+									</Link>
+								</li>
+								<li>
+									<Link href="#">
+										<a>WhatsApp</a>
+									</Link>
+								</li>
+								<li>
+									<Link href="#">
+										<a>Chat</a>
+									</Link>
+								</li>
+								<li>
+									<Link href="#">
+										<a>Gerenciador de e-mail</a>
+									</Link>
+								</li>
+								<li>
+									<Link href="#">
+										<a>Atendimento via vídeo</a>
+									</Link>
+								</li>
+								<li>
+									<Link href="#">
+										<a>Webview</a>
+									</Link>
+								</li>
 							</ul>
 						</div>
 					</div>

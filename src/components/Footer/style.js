@@ -96,6 +96,10 @@ export const Content = styled.div`
 		}
 	}
 
+	.our-solutions li {
+		margin-bottom: 10px;
+	}
+
 	@media screen and (max-width: 900px) {
 		padding: 0 20px;
 	}
