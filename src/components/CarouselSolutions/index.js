@@ -23,7 +23,7 @@ import * as S from './styles';
 
 export default class CarouselSolutions extends Component {
 	state = {
-		slideIndex: 0,
+		slideIndex: 1,
 		updateCount: 0,
 	};
 
@@ -70,7 +70,7 @@ export default class CarouselSolutions extends Component {
 			centerPadding: 0,
 			slidesToShow: 3,
 			speed: 500,
-			initialSlide: 0,
+			initialSlide: 1,
 			responsive: [
 				{
 					breakpoint: 1024,

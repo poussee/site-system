@@ -13,6 +13,10 @@ export const MainContainer = styled.div`
 	.whiteText {
 		color: white;
 	}
+
+	.text-400 {
+		max-width: 400px;
+	}
 `;
 
 export const Container = styled.div`
@@ -37,10 +41,10 @@ export const ColumnContent = styled.div`
 		padding: 0 20px;
 	}
 
-	.inteligent-solutions {
+	.intelligent-solutions {
 		padding-top: 50px;
 
-		.inteligent-solutions-wrapper {
+		.intelligent-solutions-wrapper {
 			display: flex;
 			align-items: center;
 			gap: 10px;
@@ -242,6 +246,34 @@ export const formContent = styled.div`
 			gap: 10px;
 			color: white;
 			margin: 10px 0;
+
+			input {
+				-webkit-appearance: none;
+				background-color: #fafafa;
+				border: 2px solid white;
+				display: inline-block;
+				position: relative;
+
+				height: 25px;
+				min-width: 25px;
+				margin-top: 3px;
+			}
+
+			input:checked {
+				background-color: var(--pink);
+				border: 1px solid var(--pink);
+				color: white;
+			}
+
+			input:checked:after {
+				content: '✔';
+				font-size: 20px;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				color: white;
+			}
 
 			label {
 				text-align: justify;

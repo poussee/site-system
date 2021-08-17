@@ -62,4 +62,13 @@ export const Content = styled.div`
 			border-bottom-right-radius: 5px;
 		}
 	}
+
+	@media (max-width: 900px) {
+		flex-direction: column;
+		gap: 30px;
+
+		.cookies-buttons {
+			justify-content: center;
+		}
+	}
 `;

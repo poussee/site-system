@@ -24,9 +24,9 @@ export default function Home() {
 							Descubra novas possibilidades
 							<br /> na interação com clientes
 						</h2>
-						<p className="whiteText">
-							Desenvolvemos relacionamentos sólidos aliando
-							<br /> personalização, tecnologia e inteligência de dados.
+						<p className="whiteText text-400">
+							Desenvolvemos relacionamentos sólidos aliando personalização,
+							tecnologia e inteligência de dados.
 						</p>
 						<LinkButton className={'yellowButton'} link={'#'}>
 							Fale com um especialista
@@ -35,14 +35,14 @@ export default function Home() {
 				</S.BannerContainer>
 				<S.Container>
 					<S.ColumnContent>
-						<div className="inteligent-solutions">
-							<div className="inteligent-solutions-wrapper">
+						<div className="intelligent-solutions">
+							<div className="intelligent-solutions-wrapper">
 								<h2>Soluções Inteligentes</h2>
 								<div></div>
 							</div>
-							<p>
+							<p className="text-400">
 								Mais do que recursos tecnológicos, oferecemos serviços
-								<br /> inovadores que elevam os resultados a níveis inéditos.
+								inovadores que elevam os resultados a níveis inéditos.
 							</p>
 							<div>
 								<CarouselSolutions />
