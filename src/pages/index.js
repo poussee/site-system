@@ -118,8 +118,8 @@ export default function Home() {
 									placeholder="Mensagem*"
 								></input>
 								<div className="politics-form-wrapper">
-									<input type="checkbox"></input>
-									<label>
+									<input type="checkbox" id="home-form"></input>
+									<label for="home-form">
 										Estou ciente das condições de tratamento dos meus dados
 										pessoais e dou meu consentimento, quando aplicável, conforme
 										descrito na
