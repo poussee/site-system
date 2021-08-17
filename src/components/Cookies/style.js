@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
 	position: fixed;
 	width: 100%;
-	height: 100vh;
+	height: -webkit-fill-available;
 	z-index: 9999;
 	background-color: rgba(0, 0, 0, 0.5);
 `;
@@ -15,7 +15,7 @@ export const Content = styled.div`
 	gap: 20px;
 	width: 100%;
 	padding: 20px 20px;
-	bottom: 0;
+	bottom: 0px;
 	background-color: var(--yellow);
 
 	.cookies-title {
@@ -66,7 +66,6 @@ export const Content = styled.div`
 	@media (max-width: 900px) {
 		flex-direction: column;
 		gap: 30px;
-
 		.cookies-buttons {
 			justify-content: center;
 		}
