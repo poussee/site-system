@@ -123,6 +123,7 @@ export default class CarouselSolutions extends Component {
 					>
 						VENDAS
 					</span>
+					<span className="divisor"></span>
 					<span
 						className={`mais ${
 							this.state.slideIndex === 3 ? 'activeOption' : ''

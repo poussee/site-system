@@ -43,13 +43,19 @@ export const CarouselMenu = styled.div`
 		background-color: black;
 	}
 
-	.mais {
-		margin-left: 10px;
-	}
-
 	.activeOption {
 		color: #cb2378;
 		text-decoration: underline;
+	}
+
+	@media (max-width: 560px) {
+		font-size: 10px;
+		white-space: nowrap;
+	}
+
+	@media (min-width: 561px) and (max-width: 768px) {
+		font-size: 14px;
+		white-space: nowrap;
 	}
 `;
 
