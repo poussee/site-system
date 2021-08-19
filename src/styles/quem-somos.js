@@ -47,6 +47,14 @@ export const ContentAboutUs = styled.div`
 		opacity: 0;
 		pointer-events: none;
 	}
+
+	.pink-trace {
+		width: 50%;
+		max-width: 300px;
+		margin-top: 5px;
+		height: 2px;
+		background-color: #cb2077;
+	}
 `;
 
 export const Container = styled.div`
@@ -65,6 +73,7 @@ export const AwardsContent = styled.div`
 		justify-content: space-between;
 
 		width: 100%;
+		gap: 20px;
 
 		& > div {
 			display: flex;
@@ -187,6 +196,10 @@ export const ContainerSocial = styled.div`
 		.button-holder {
 			margin-top: 30px;
 
+			color:black;
+			a{
+				cursor:pointer;
+			}
 		}
 
 		.join-us-content {

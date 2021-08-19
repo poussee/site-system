@@ -9,7 +9,6 @@ import LinkButton from '../components/LinkButton';
 import bannerBackground from '../../public/assets/banners/banner-quem-somos.png';
 import intelligentSolutions from '../../public/assets/Solucoes-inteligentes.png';
 import joinUs from '../../public/assets/quem-somos/Imagem_junte_se_nos.png';
-import pinkTrace from '../../public/assets/traco_cobranca.png';
 import ongAmamos from '../../public/assets/quem-somos/ONG_Amamos.png';
 import larBussocaba from '../../public/assets/quem-somos/ONG_Lar_Bussocaba.png';
 import exercitoDaSalvacao from '../../public/assets/quem-somos/ONG_exercito_salvacao.png';
@@ -53,7 +52,7 @@ export default function QuemSomos() {
 							tudo é a System.
 						</p>
 						<h4>Como podemos transformar seus resultados hoje?</h4>
-						<Image src={pinkTrace} alt="alterar" />
+						<div className="pink-trace"></div>
 					</div>
 					<div className="about-us-carousel-content">
 						<h2 className="pink-text">Acompanhe nossa trajetória</h2>

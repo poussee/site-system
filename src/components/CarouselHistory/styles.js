@@ -35,27 +35,27 @@ export const CarouselContainer = styled.div`
 	}
 	.rec-arrow-left {
 		background: none;
-		color: #0182b0;
+		color: #fcc900;
 		box-shadow: none;
 		font-size: 40px;
 		font-weight: bolder;
 		&:hover,
 		&:focus {
 			background: none;
-			color: #0182b0;
+			color: #fcc900;
 			box-shadow: none;
 		}
 	}
 	.rec-arrow-right {
 		background: none;
-		color: #0182b0;
+		color: #fcc900;
 		box-shadow: none;
 		font-size: 40px;
 		font-weight: bolder;
 		&:hover,
 		&:focus {
 			background: none;
-			color: #0182b0;
+			color: #fcc900;
 			box-shadow: none;
 		}
 	}
