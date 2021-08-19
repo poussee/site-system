@@ -119,7 +119,7 @@ export default function Home() {
 								></input>
 								<div className="politics-form-wrapper">
 									<input type="checkbox" id="home-form"></input>
-									<label for="home-form">
+									<label htmlFor="home-form">
 										Estou ciente das condições de tratamento dos meus dados
 										pessoais e dou meu consentimento, quando aplicável, conforme
 										descrito na
