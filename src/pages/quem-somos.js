@@ -20,6 +20,7 @@ export default function QuemSomos() {
 	return (
 		<>
 			<BannerQuemSomos
+				className="banner"
 				background={bannerBackground}
 				title="Pioneiros em interações data-driven"
 				subtitle="Criamos novas formas de potencializar o atendimento para construir relacionamentos sustentáveis."

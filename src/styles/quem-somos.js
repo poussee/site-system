@@ -17,7 +17,7 @@ export const ContainerAboutUs = styled.div`
 `;
 
 export const ContentAboutUs = styled.div`
-	width: 95%;
+	width: 85%;
 	max-width: 968px;
 	margin: 0 auto;
 	padding: 80px 0;
@@ -62,7 +62,7 @@ export const Container = styled.div`
 `;
 
 export const AwardsContent = styled.div`
-	width: 95%;
+	width: 85%;
 	max-width: 968px;
 	margin: 0 auto;
 	padding: 80px 0;
@@ -139,8 +139,8 @@ export const ContainerSocial = styled.div`
 	width: 100%;
 
 	& > div {
-		width: 95%;
-		max-width: 968px;
+		width: 85%;
+		max-width: 980px;
 		margin: 0 auto;
 		position: relative;
 	}
@@ -170,8 +170,8 @@ export const ContainerSocial = styled.div`
 
 	.joinUs-image-container {
 		position:relative
-		width: 95%;
-		max-width: 968px;
+		width: 85%;
+		max-width: 980px;
 		margin: 0 auto;
 
 
@@ -203,8 +203,8 @@ export const ContainerSocial = styled.div`
 		}
 
 		.join-us-content {
-			width: 95%;
-			max-width: 968px;
+			width: 85%;
+			max-width: 980px;
 			margin: 0 auto;
 
 			.join-us-limiter {
@@ -227,8 +227,8 @@ export const ContainerSocial = styled.div`
 		background-repeat: no-repeat;
 
 		.social-responsibility-content {
-			width: 95%;
-			max-width: 968px;
+			width: 85%;
+			max-width: 980px;
 			margin: 0 auto;
 
 			.social-responsibility-limiter {
@@ -251,6 +251,12 @@ export const ContainerSocial = styled.div`
 	@media(max-width:768px){
 		.joinUs-image-container{
 			display:none;
+		}
+
+		.social-responsibility-limiter{
+			h2{
+				text-align:center;
+			}
 		}
 
 	}
@@ -279,7 +285,7 @@ export const SocialAction = styled.section`
 	display: flex;
 	justify-content: space-between;
 
-	width: 95%;
+	width: 85%;
 	max-width: 768px;
 	margin: 0 auto;
 	padding-bottom: 80px;
@@ -300,16 +306,22 @@ export const SocialAction = styled.section`
 		}
 	}
 
-	.amamos {
+	.amamos h3 {
 		color: #0081af;
 	}
 
-	.bussocaba {
+	.bussocaba h3 {
 		color: #6c107b;
 	}
 
-	.salvacao {
+	.salvacao h3 {
 		color: #cb2077;
+	}
+
+	@media (max-width: 768px) {
+		.social-card {
+			width: 85%;
+		}
 	}
 
 	@media (max-width: 510px) {
@@ -337,7 +349,7 @@ export const VirtualTour = styled.div`
 	align-items: center;
 	justify-content: center;
 
-	width: 95%;
+	width: 85%;
 	max-width: 968px;
 	height: fit-content;
 	margin: 0 auto;

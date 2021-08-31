@@ -12,7 +12,7 @@ export const Content = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	align-items: left;
-	width: 95%;
+	width: 85%;
 	max-width: 980px;
 	height: 100%;
 	margin: 0 auto;

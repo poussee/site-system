@@ -27,7 +27,7 @@ export const ColumnContent = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: left;
-	width: 95%;
+	width: 85%;
 	max-width: 980px;
 	height: 100%;
 	gap: 20px;
@@ -36,10 +36,6 @@ export const ColumnContent = styled.div`
 	z-index: 400;
 	padding: 10px 0;
 	position: relative;
-
-	@media screen and (max-width: 900px) {
-		padding: 0 20px;
-	}
 
 	.intelligent-solutions {
 		padding-top: 50px;
@@ -68,17 +64,13 @@ export const RowContent = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 95%;
+	width: 85%;
 	max-width: 980px;
 	margin: 0 auto;
 	justify-content: space-between;
 	z-index: 400;
 	padding: 10px 0;
 	position: relative;
-
-	@media screen and (max-width: 900px) {
-		padding: 0 20px;
-	}
 `;
 
 export const BannerContainer = styled.div`
@@ -98,7 +90,7 @@ export const RelationsContainer = styled.div`
 	background-repeat: no-repeat;
 
 	.relations-content {
-		width: 95%;
+		width: 85%;
 		max-width: 980px;
 		margin: 0 auto;
 		z-index: 400;
@@ -110,10 +102,6 @@ export const RelationsContainer = styled.div`
 			padding-top: 10px;
 			width: fit-content;
 			font-weight: 400;
-		}
-
-		@media screen and (max-width: 900px) {
-			padding: 0 20px;
 		}
 	}
 
@@ -296,6 +284,7 @@ export const formContent = styled.div`
 
 	@media screen and (max-width: 900px) {
 		justify-content: center !important;
+		width: 85%;
 		padding: 20px;
 		background-position: right;
 		background-size: 90% 100%;
@@ -315,7 +304,7 @@ export const formContent = styled.div`
 		justify-content: center;
 
 		.form-content {
-			width: 95%;
+			width: 90%;
 			padding: 20px 0;
 		}
 

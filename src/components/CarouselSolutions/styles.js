@@ -23,7 +23,7 @@ export const Container = styled.section`
 		padding: 0 50px;
 	}
 	@media screen and (max-width: 900px) {
-		padding: 50px 0;
+		padding: 0;
 		margin-top: 0;
 	}
 `;

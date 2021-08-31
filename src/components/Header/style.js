@@ -69,10 +69,10 @@ export const MenuContainer = styled.div`
 		top: 40px;
 		right: 0;
 		background: white;
-		padding: 40px;
+		padding: 20px;
 
 		a {
-			color: white;
+			color: black;
 		}
 	}
 `;

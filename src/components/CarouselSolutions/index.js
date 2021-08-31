@@ -38,27 +38,27 @@ export default class CarouselSolutions extends Component {
 
 		const sliderIntern = this.slider;
 
-		const menuOptions = {
-			sac: function () {
-				sliderIntern.slickGoTo(0);
-			},
-			cobranca: () => {
-				sliderIntern.slickGoTo(1);
-			},
-			vendas: function () {
-				sliderIntern.slickGoTo(2);
-			},
-			mais: function () {
-				sliderIntern.slickGoTo(3);
-			},
-		};
+		// const menuOptions = {
+		// 	sac: function () {
+		// 		sliderIntern.slickGoTo(0);
+		// 	},
+		// 	cobranca: () => {
+		// 		sliderIntern.slickGoTo(1);
+		// 	},
+		// 	vendas: function () {
+		// 		sliderIntern.slickGoTo(2);
+		// 	},
+		// 	mais: function () {
+		// 		sliderIntern.slickGoTo(3);
+		// 	},
+		// };
 
-		menu.forEach((item) => {
-			if (item.classList[0] === e.target.classList[0]) {
-				menuOptions[e.target.classList[0]]();
-			} else {
-			}
-		});
+		// menu.forEach((item) => {
+		// 	if (item.classList[0] === e.target.classList[0]) {
+		// 		menuOptions[e.target.classList[0]]();
+		// 	} else {
+		// 	}
+		// });
 	}
 
 	render() {
@@ -96,7 +96,7 @@ export default class CarouselSolutions extends Component {
 		};
 		return (
 			<S.Container>
-				<S.CarouselMenu className="carouselMenu">
+				{/* <S.CarouselMenu className="carouselMenu">
 					<span
 						className={`sac ${
 							this.state.slideIndex === 0 ? 'activeOption' : ''
@@ -132,7 +132,7 @@ export default class CarouselSolutions extends Component {
 					>
 						MAIS OPÇÕES
 					</span>
-				</S.CarouselMenu>
+				</S.CarouselMenu> */}
 				<S.CarouselContainer>
 					<Slider ref={(slider) => (this.slider = slider)} {...settings}>
 						<S.ItemContainer>
