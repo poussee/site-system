@@ -5,7 +5,7 @@ import Image from 'next/dist/client/image';
 
 import CarouselSegments from '../components/CarouselSegments';
 import CarouselSolutions from '../components/CarouselSolutions';
-import Form from '../components/form';
+import Form from '../components/Form';
 
 import formImage from '../../public/assets/Imagem_formulario-min.png';
 import relationsImage from '../../public/assets/Imagem_Especialistas-em-relacoes-humanas.png';

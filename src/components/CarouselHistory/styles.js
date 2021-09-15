@@ -85,10 +85,43 @@ export const ItemContainer = styled.div`
 	width: 100%;
 `;
 
+export const UpperText = styled.div`
+	display: flex;
+	align-items: center;
+
+	height: 160px;
+	max-width: 311px;
+
+	background: url(/assets/quem-somos/Timeline/timeline/Balao_01.png);
+	background-size: 100% 100%;
+
+	p {
+		padding: 10px 20px 20px 20px;
+	}
+`;
+
+export const BellowText = styled.div`
+	display: flex;
+	align-items: center;
+
+	height: 160px;
+	max-width: 311px;
+
+	background: url(/assets/quem-somos/Timeline/timeline/Balao_02.png);
+	background-size: 100% 100%;
+
+	p {
+		padding: 20px 20px 10px 20px;
+	}
+`;
+
 export const ImgContainer = styled.div`
 	display: flex;
 	justify-content: center;
 	width: 100%;
+
+	${(props) =>
+		props.padding ? 'padding-top:160px;' : 'padding-bottom:160px;'};
 
 	object-fit: cover;
 

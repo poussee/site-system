@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 import Banner from '../components/Banners/Banner';
 import bannerBackground from '../../public/assets/banners/banner-contato.png';
-import Form from '../components/form';
+import Form from '../components/Form';
 import Tour from '../components/Tour';
 import GoogleMaps from '../components/Map';
 
