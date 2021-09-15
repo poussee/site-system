@@ -8,6 +8,7 @@ import {
 
 const defaultCenter = { lat: -23.482777365733014, lng: -46.77427577636617 };
 const defaultOptions = { scrollwheel: false };
+const apiKey = 'AIzaSyAZEE1EPxsFi7KxTddlHh2U6NzK-ruTMtM';
 
 const RegularMap = withScriptjs(
 	withGoogleMap((props) => (
@@ -28,7 +29,7 @@ const mapElementStyle = { height: '100%' };
 export default function GoogleMaps() {
 	return (
 		<RegularMap
-			googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZEE1EPxsFi7KxTddlHh2U6NzK-ruTMtM"
+			googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${apiKey}`}
 			loadingElement={<div style={loadingElementStyle} />}
 			containerElement={<div style={containerElementStyle} />}
 			mapElement={<div style={mapElementStyle} />}
