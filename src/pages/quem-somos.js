@@ -1,10 +1,10 @@
 import Image from 'next/dist/client/image';
-import Link from 'next/link';
 
-import BannerQuemSomos from '../components/Banners/QuemSomosBanner';
+import Banner from '../components/Banners/Banner';
 import HistoryCarousel from '../components/CarouselHistory';
 import AwardsCarousel from '../components/CarouselAwards';
 import LinkButton from '../components/LinkButton';
+import Tour from '../components/Tour';
 
 import bannerBackground from '../../public/assets/banners/banner-quem-somos.png';
 import intelligentSolutions from '../../public/assets/Solucoes-inteligentes.png';
@@ -12,14 +12,13 @@ import joinUs from '../../public/assets/quem-somos/Imagem_junte_se_nos.png';
 import ongAmamos from '../../public/assets/quem-somos/ONG_Amamos.png';
 import larBussocaba from '../../public/assets/quem-somos/ONG_Lar_Bussocaba.png';
 import exercitoDaSalvacao from '../../public/assets/quem-somos/ONG_exercito_salvacao.png';
-import videoThumb from '../../public/assets/quem-somos/Imagem_tour_virtual_exemplo.png';
 
 import * as S from '../styles/quem-somos';
 
 export default function QuemSomos() {
 	return (
 		<>
-			<BannerQuemSomos
+			<Banner
 				className="banner"
 				background={bannerBackground}
 				title="Pioneiros em interações data-driven"
@@ -173,23 +172,7 @@ export default function QuemSomos() {
 				</S.SocialAction>
 			</S.Container>
 			<S.ContainerVirtualTour>
-				<S.VirtualTour>
-					<div>
-						<div className="flex-title">
-							<h2>JUNTE-SE À NÓS</h2>
-							<div className="white-divisor"></div>
-						</div>
-						<p>
-							Que tal conferir nossa estrutura em uma experiência imersiva 360º?
-						</p>
-						<p>Aproveite a visita!</p>
-					</div>
-					<div>
-						<Link href="https://villa360.com.br/tour/system/">
-							<Image src={videoThumb} alt="alterar" />
-						</Link>
-					</div>
-				</S.VirtualTour>
+				<Tour title="JUNTE-SE À NÓS" />
 			</S.ContainerVirtualTour>
 		</>
 	);

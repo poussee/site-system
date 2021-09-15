@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import * as S from './style';
 
-const BannerQuemSomos = (props) => {
+const Banner = (props) => {
 	return (
 		<S.Container style={{ backgroundImage: `url(${props.background.src})` }}>
 			<S.Content>
@@ -14,4 +14,4 @@ const BannerQuemSomos = (props) => {
 	);
 };
 
-export default BannerQuemSomos;
+export default Banner;

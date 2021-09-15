@@ -1,10 +1,11 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import LinkButton from '../components/LinkButton';
+import Image from 'next/dist/client/image';
+
 import CarouselSegments from '../components/CarouselSegments';
 import CarouselSolutions from '../components/CarouselSolutions';
-
-import Image from 'next/dist/client/image';
+import Form from '../components/form';
 
 import formImage from '../../public/assets/Imagem_formulario-min.png';
 import relationsImage from '../../public/assets/Imagem_Especialistas-em-relacoes-humanas.png';
@@ -103,33 +104,11 @@ export default function Home() {
 							/>
 						</div>
 						<div className="form-content">
-							<h2>ENTRE EM CONTATO</h2>
-							<p>
-								Converse com os nossos especialistas e descubra como podemos
-								reinventar a sua comunicação com o consumidor.
-							</p>
-							<form>
-								<input type="text" placeholder="Nome*"></input>
-								<input type="text" placeholder="E-mail*"></input>
-								<input type="text" placeholder="Telefone*"></input>
-								<input
-									className="home-form-textarea"
-									type="textarea"
-									placeholder="Mensagem*"
-								></input>
-								<div className="politics-form-wrapper">
-									<input type="checkbox" id="home-form"></input>
-									<label htmlFor="home-form">
-										Estou ciente das condições de tratamento dos meus dados
-										pessoais e dou meu consentimento, quando aplicável, conforme
-										descrito na
-										<a> Política de Privacidade</a>.
-									</label>
-								</div>
-								<div className="home-form-button-container">
-									<button>Enviar</button>
-								</div>
-							</form>
+							<Form
+								title="ENTRE EM CONTATO"
+								subtitle="Converse com os nossos especialistas e descubra como podemos
+								reinventar a sua comunicação com o consumidor."
+							/>
 						</div>
 					</S.formContent>
 				</S.Container>

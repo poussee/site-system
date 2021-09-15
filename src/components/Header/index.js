@@ -2,10 +2,9 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import Image from 'next/dist/client/image';
+import { MdMenu, MdClose } from 'react-icons/md';
 
 import logoSystem from '../../../public/assets/Logo-Menu.png';
-
-import { MdMenu, MdClose } from 'react-icons/md';
 
 import * as S from './style';
 
@@ -39,7 +38,7 @@ const Header = () => {
 						</a>
 					</Link>{' '}
 					<Link href="/quem-somos" onClick={handleMenu}>
-						<a className={router.pathname == '/contato' ? 'activeMenu' : ''}>
+						<a className={router.pathname == '/quem-somos' ? 'activeMenu' : ''}>
 							Quem somos
 						</a>
 					</Link>
@@ -48,7 +47,7 @@ const Header = () => {
 							Serviços
 						</a>
 					</Link>
-					<Link href="#" onClick={handleMenu}>
+					<Link href="/contato" onClick={handleMenu}>
 						<a className={router.pathname == '/contato' ? 'activeMenu' : ''}>
 							Contato
 						</a>
