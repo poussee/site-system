@@ -18,7 +18,11 @@ export default function Tour(props) {
 					<p>Aproveite a visita!</p>
 				</div>
 				<div>
-					<a href="https://villa360.com.br/tour/system/" target="_blank">
+					<a
+						href="https://villa360.com.br/tour/system/"
+						target="_blank"
+						rel="noreferrer"
+					>
 						<Image src={videoThumb} alt="alterar" />
 					</a>
 				</div>

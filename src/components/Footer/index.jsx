@@ -174,18 +174,21 @@ const Footer = () => {
 						<div className="footer-socials-wrapper">
 							<a
 								target="_blank"
+								rel="noreferrer"
 								href="https://www.facebook.com/SystemInteractBR"
 							>
 								<i className="fab fa-facebook-f"></i>
 							</a>
 							<a
 								target="_blank"
+								rel="noreferrer"
 								href="https://www.instagram.com/oficialsystem/"
 							>
 								<i className="fab fa-instagram"></i>
 							</a>
 							<a
 								target="_blank"
+								rel="noreferrer"
 								href="https://www.linkedin.com/company/system-interact/"
 							>
 								<i className="fab fa-linkedin-in"></i>

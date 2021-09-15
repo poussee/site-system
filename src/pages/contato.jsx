@@ -22,7 +22,7 @@ export default function Contato() {
 			<S.FormContainer>
 				<S.FormContent>
 					<div className="form-image">
-						<Image src={FormImage} />
+						<Image src={FormImage} alt="Homem falando ao telefone" />
 					</div>
 					<div className="form-holder">
 						<Form
