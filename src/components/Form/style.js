@@ -1,5 +1,23 @@
 import styled from 'styled-components';
 
+export const FormSucceed = styled.section`
+	display: flex;
+	align-items: center;
+
+	width: 100%;
+	height: 100%;
+
+	p {
+		max-width: 350px;
+		margin: 0 auto;
+		${(props) => (props.padding ? 'padding: 0 20px;' : '')};
+
+		text-align: center;
+		font-size: 20px;
+		color: white;
+	}
+`;
+
 export const FormContainer = styled.section`
 	width: 100%;
 
@@ -25,7 +43,12 @@ export const FormContainer = styled.section`
 		margin-top: 20px;
 		gap: 10px;
 
-		& > input {
+		.error {
+			color: rgba(255, 0, 0, 0.7);
+		}
+
+		& > input,
+		.formSelect {
 			border: none;
 			outline: none;
 			border-bottom: 1px solid white;
@@ -33,6 +56,45 @@ export const FormContainer = styled.section`
 			height: 30px;
 			background-color: transparent;
 			color: white;
+			font-size: 14px;
+		}
+
+		.formSelect {
+			position: relative;
+
+			.hide {
+				opacity: 0;
+				pointer-events: none;
+			}
+
+			.show {
+				opacity: 1;
+				pointer-events: initial;
+			}
+
+			.formSelectOptions {
+				display: flex;
+				flex-direction: column;
+				position: absolute;
+				z-index: 999;
+
+				width: 100%;
+				top: 100%;
+				left: 0;
+				background-color: white;
+				color: black;
+				border: 1px solid rgba(0, 0, 0, 0.2);
+
+				span {
+					padding: 10px 5px;
+					border: 1px solid rgba(0, 0, 0, 0.1);
+
+					&:hover {
+						background-color: rgba(202, 35, 119, 0.2);
+						border: 1px solid rgba(202, 35, 119, 0.1);
+					}
+				}
+			}
 		}
 
 		& > input::placeholder {

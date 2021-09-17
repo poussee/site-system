@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { useRouter } from 'next/router';
 import Image from 'next/dist/client/image';
 import LinkButton from '../LinkButton';
 
