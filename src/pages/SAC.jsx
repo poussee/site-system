@@ -6,8 +6,8 @@ import Form from '../components/Form';
 import SolutionBlock from '../components/SolutionBlock';
 import CarouselUniqueServices from '../components/CarouselUniqueServices';
 
-import bannerBackground from '../../public/assets/banners/banner-vendas.png';
-import SolutionImage from '/public/assets/cobranca/Imagem_Solucoes.png';
+import bannerBackground from '../../public/assets/banners/banner-sac.png';
+import SolutionImage from '/public/assets/sac/Imagem_Excelencia.png';
 import FormImage from '../../public/assets/Imagem_Quero-um-orcamento.png';
 import EmpathyImage from '/public/assets/cobranca/Icone_Empatia.png';
 import PlanningImage from '/public/assets/cobranca/Icone_Planejamento.png';
@@ -26,12 +26,12 @@ export default function QuemSomos() {
 			<Banner
 				className="banner"
 				background={bannerBackground}
-				title="Vendas"
-				subtitle="Desenvolvimento de estratégias que potencializam a geração de novos negócios."
+				title="SAC"
+				subtitle="Gerenciamento da resolução de problemas e reclamações em múltiplos canais de atendimento."
 				service={true}
 			/>
 			<SolutionBlock
-				color="#cb2378"
+				color="#0182b0"
 				image={SolutionImage}
 				title={'ABORDAGENS INTELIGENTES E PERSONALIZADAS'}
 				subtitle="Tudo o que sua empresa precisa para conquistar e fidelizar clientes."
