@@ -9,7 +9,7 @@ import FotoDepoimento from '../../../public/assets/cobranca/Foto_Depoimento.png'
 
 import * as S from './styles';
 
-export default class CustomerComments extends Component {
+export default class CarouselCustomerComments extends Component {
 	render() {
 		const settings = {
 			className: 'center',

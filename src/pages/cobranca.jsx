@@ -1,11 +1,12 @@
 import Image from 'next/dist/client/image';
 
 import Banner from '../components/Banners/Banner';
-import CustomerComments from '../components/CarouselCustomerComments';
+import CustomerComments from '../components/CustomerComments';
 import Form from '../components/Form';
 import SolutionBlock from '../components/SolutionBlock';
 import CarouselUniqueServices from '../components/CarouselUniqueServices';
 
+const CustomerCommentsBackground = '/assets/cobranca/Bg_Depoimento.png';
 import bannerBackground from '../../public/assets/banners/banner-cobranca.png';
 import SolutionImage from '/public/assets/cobranca/Imagem_Solucoes.png';
 import FormImage from '../../public/assets/Imagem_Quero-um-orcamento.png';
@@ -66,25 +67,7 @@ export default function QuemSomos() {
 				eighthImage={ResultsImage}
 				eighthDescription={'Foco na entrega de resultados'}
 			/>
-			<S.CommentsContainer>
-				<S.CommentsContent>
-					<div className="row-wrapper">
-						<div className="text-wrapper">
-							<div className="awards-title">
-								<h2>DEPOIMENTOS DE CLIENTES</h2>
-								<div className="awards-divisor"></div>
-							</div>
-							<p>
-								O reconhecimento é consequência de uma atuação centrada no
-								consumidor e guiada por dados.
-							</p>
-						</div>
-						<div className="carousel-wrapper">
-							<CustomerComments />
-						</div>
-					</div>
-				</S.CommentsContent>
-			</S.CommentsContainer>
+			<CustomerComments BackgroundImage={CustomerCommentsBackground} />
 			<S.FormContainer>
 				<S.FormContent>
 					<div className="form-image">

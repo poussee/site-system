@@ -1,22 +1,23 @@
 import Image from 'next/dist/client/image';
 
 import Banner from '../components/Banners/Banner';
-import CustomerComments from '../components/CarouselCustomerComments';
+import CustomerComments from '../components/CustomerComments';
 import Form from '../components/Form';
 import SolutionBlock from '../components/SolutionBlock';
 import CarouselUniqueServices from '../components/CarouselUniqueServices';
 
+const CustomerCommentsBackground = '/assets/sac/Bg_Depoimento.png';
 import bannerBackground from '../../public/assets/banners/banner-sac.png';
 import SolutionImage from '/public/assets/sac/Imagem_Excelencia.png';
 import FormImage from '../../public/assets/Imagem_Quero-um-orcamento.png';
-import EmpathyImage from '/public/assets/cobranca/Icone_Empatia.png';
-import PlanningImage from '/public/assets/cobranca/Icone_Planejamento.png';
-import ChargeImage from '/public/assets/cobranca/Icone_Processo_cobrança.png';
-import ProductionImage from '/public/assets/cobranca/Icone_Produção.png';
-import AgilityImage from '/public/assets/cobranca/Icone_agilidade.png';
-import CrmImage from '/public/assets/cobranca/Icone_CRM.png';
-import PartnersImage from '/public/assets/cobranca/Icone_parcerias.png';
-import ResultsImage from '/public/assets/cobranca/Icone_Foco_Resultados.png';
+import SelectionImage from '/public/assets/sac/Icone_Selecao.png';
+import TrainamentImage from '/public/assets/sac/Icone_Treinamento.png';
+import AgilityImage from '/public/assets/sac/Icone_Agilidade.png';
+import CreationImage from '/public/assets/sac/Icone_Cariacao.png';
+import InterationImage from '/public/assets/sac/Icone_Interacoes.png';
+import IntegrationImage from '/public/assets/sac/Icone_Integracao.png';
+import ChatBotImage from '/public/assets/sac/Icone_Chatbot.png';
+import NPSImage from '/public/assets/sac/Icone_NPS.png';
 
 import * as S from '../styles/servicesCommonStyle';
 
@@ -33,56 +34,42 @@ export default function QuemSomos() {
 			<SolutionBlock
 				color="#0182b0"
 				image={SolutionImage}
-				title={'ABORDAGENS INTELIGENTES E PERSONALIZADAS'}
-				subtitle="Tudo o que sua empresa precisa para conquistar e fidelizar clientes."
-				text="Comprometidos com a qualidade das vendas, garantimos integridade e segurança em todo o processo, com áreas focadas na excelência e no monitoramento contínuo. Muito além de entregar os melhores resultados, construímos um relacionamento próximo com os consumidores, atuando inclusive no pós-venda."
+				title={'EXCELENCIA EM SUPORTE AO CLIENTE'}
+				subtitle="A eficiência que os consumidores buscam ao contatar sua empresa."
+				text="SAC é a sigla para Serviço de Atendimento ao Consumidor. Trata-se de um serviço prestado pelas empresas para atender aos seus clientes, resolvendo chamados técnicos, esclarecendo dúvidas e informando detalhes sobre produtos e serviços."
 				listItems={[
-					'Com o auxílio de inteligência artificial, identificamos prontamente oportunidades de geração de negócios por meio de speech analytics.',
-					'Atuamos com o conceito de Business Support, que inclui etapas como o planejamento, o acompanhamento de resultados e a integração tecnológica.',
-					'Oferecemos treinamentos sob medida para os operadores, totalmente alinhados às soluções e necessidades dos nossos clientes.',
-					'Somos especialistas em seguros: mais de 80% das nossas operações de vendas atendem grandes empresas do segmento.',
+					'Oferecemos atendimento regulamentado e transacional, abrangendo todos os principais canais da atualidade.',
+					'Integramos os diferentes meios de contato, como e-mail, chat e telefone, para proporcionar maior fluidez e comodidade na jornada do cliente.',
+					'Geramos relatórios gerenciais visando garantir visibilidade durante todo o processo.',
+					'Realizamos análises em tempo real e utilizamos os dados para oferecer ao cliente exatamente o que ele precisa, no momento certo.',
 				]}
-				titleWidth={'350px'}
+				titleWidth={'auto'}
 			/>
 			<CarouselUniqueServices
-				firstImage={EmpathyImage}
-				firstDescription={'Empatia e humanização no atendimento'}
-				secondImage={PlanningImage}
-				secondDescription={'Processo de cobrança inteligente e eficaz'}
-				thirdImage={ChargeImage}
-				thirdDescription={'Planejamento e modelagem estatística'}
-				fourthImage={ProductionImage}
-				fourthDescription={'Produção e gestão de informações gerenciais'}
-				fifthImage={AgilityImage}
-				fifthDescription={'Agilidade na implantação de processos e operações'}
-				sixthImage={CrmImage}
-				sixthDescription={'Conceitos de CRM aplicados à recuperação de crédito'}
-				seventhImage={PartnersImage}
-				seventhDescription={
-					'Parcerias com outros canais de soluções e fidelização de clientes'
+				firstImage={SelectionImage}
+				firstDescription={
+					'Seleção de profissionais com o auxílio de tecnologias avançadas'
 				}
-				eighthImage={ResultsImage}
-				eighthDescription={'Foco na entrega de resultados'}
+				secondImage={TrainamentImage}
+				secondDescription={'Treinamentos customizados para os agentes'}
+				thirdImage={AgilityImage}
+				thirdDescription={'Agilidade na resolução de dúvidas dos clientes'}
+				fourthImage={CreationImage}
+				fourthDescription={
+					'Criação, atualização e envio de relatórios gerenciais'
+				}
+				fifthImage={InterationImage}
+				fifthDescription={
+					'Interações personalizadas de acordo com o perfil do cliente'
+				}
+				sixthImage={IntegrationImage}
+				sixthDescription={'Integração dos canais de atendimento'}
+				seventhImage={ChatBotImage}
+				seventhDescription={'Possibilidade de automação por meio de chatbots'}
+				eighthImage={NPSImage}
+				eighthDescription={'NPS acima da média do mercado'}
 			/>
-			<S.CommentsContainer>
-				<S.CommentsContent>
-					<div className="row-wrapper">
-						<div className="text-wrapper">
-							<div className="awards-title">
-								<h2>DEPOIMENTOS DE CLIENTES</h2>
-								<div className="awards-divisor"></div>
-							</div>
-							<p>
-								O reconhecimento é consequência de uma atuação centrada no
-								consumidor e guiada por dados.
-							</p>
-						</div>
-						<div className="carousel-wrapper">
-							<CustomerComments />
-						</div>
-					</div>
-				</S.CommentsContent>
-			</S.CommentsContainer>
+			<CustomerComments BackgroundImage={CustomerCommentsBackground} />
 			<S.FormContainer>
 				<S.FormContent>
 					<div className="form-image">
