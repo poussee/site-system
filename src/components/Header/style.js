@@ -6,7 +6,6 @@ const animaMenu = keyframes`
     transform: translateY(-10px);
     visibility: none;
     pointer-events: none;
-
   }
 
   to {   
@@ -18,10 +17,12 @@ const animaMenu = keyframes`
 `;
 
 export const Container = styled.div`
+	position: relative;
 	width: 100%;
 	background-image: url(./assets/BG_Menu.png);
 	background-size: cover;
 	background-repeat: no-repeat;
+	z-index: 9999;
 `;
 
 export const Content = styled.div`
@@ -37,7 +38,7 @@ export const Content = styled.div`
 
 	.logo-container {
 		width: 20%;
-		padding: 10px 0;
+		padding: 5px 0;
 		min-width: 150px;
 		max-width: 180px;
 	}
@@ -53,13 +54,21 @@ export const MenuWrapper = styled.div`
 `;
 
 export const MenuContainer = styled.div`
+	display: flex;
+	gap: 10px;
 	width: 60%;
 
-	a {
+	a,
+	span {
 		color: white;
 		text-decoration: none;
-		padding: 5px 10px;
+		padding: 2px 0;
 		font-size: 16px;
+		margin: 10px 0;
+	}
+
+	.activeMenu {
+		border-bottom: 2px solid #a46e14;
 	}
 
 	@media screen and (max-width: 900px) {
@@ -93,34 +102,37 @@ export const MenuMobile = styled.button`
 	}
 `;
 
-export const Dropdown = styled.span`
+export const Dropdown = styled.div`
+	display: flex;
+	align-items: center;
 	position: relative;
 	cursor: pointer;
+	width: fit-content;
 
-	ul {
+	.linkConteudos {
 		display: none;
 		position: absolute;
-		top: 2px;
-		left: 50%;
+		top: 100%;
+		left: 100%;
 		transform: translateX(-50%);
 		background: white;
 		color: black;
-		padding: 0px 0px 10px 8px;
+		padding: 0px 18px 10px 18px;
 		border: 5px solid transparent;
 		border-radius: 20px;
-		width: 180px;
+		width: 130px;
 		z-index: 2000;
 
 		li {
 			list-style: none;
-			text-align: center;
 			animation: ${animaMenu} 0.5s ease-in;
 
 			a {
-				width: 150px;
+				width: fit-content;
 				display: block;
 				font-size: 12px;
 				padding: 0;
+				margin: 0;
 				padding-top: 10px;
 				color: black;
 
@@ -137,6 +149,7 @@ export const Dropdown = styled.span`
 	}
 
 	&:hover ul,
+	&:focus ul,
 	&:checked ul {
 		display: block;
 	}

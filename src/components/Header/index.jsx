@@ -17,6 +17,16 @@ const Header = () => {
 		setMobile((prev) => !prev);
 	}
 
+	function showUl(e) {
+		if (e.target.innerText === 'Serviços') {
+			if (e.target.innerText != 'Serviços') {
+				e.target.display === 'none';
+			} else {
+				e.target.display === 'inherit';
+			}
+		}
+	}
+
 	return (
 		<S.Container>
 			<S.Content>
@@ -31,29 +41,83 @@ const Header = () => {
 					</a>
 				</Link>
 
-				<S.MenuContainer isActive={!mobile}>
+				<S.MenuContainer className={'linkConteudos'} isActive={!mobile}>
 					<Link href="/" onClick={handleMenu}>
-						<a className={router.pathname == '/#' ? 'activeMenu' : ''}>
-							Inicio
-						</a>
+						<a className={router.pathname == '/' ? 'activeMenu' : ''}>Inicio</a>
 					</Link>{' '}
 					<Link href="/quem-somos" onClick={handleMenu}>
 						<a className={router.pathname == '/quem-somos' ? 'activeMenu' : ''}>
 							Quem somos
 						</a>
 					</Link>
-					<Link href="#" onClick={handleMenu}>
-						<a className={router.pathname == '/contato' ? 'activeMenu' : ''}>
+					<S.Dropdown onClick={(handleMenu, showUl)}>
+						<a
+							className={
+								router.pathname == '/cobranca'
+									? 'activeMenu'
+									: router.pathname == '/vendas'
+									? 'activeMenu'
+									: router.pathname == '/sac'
+									? 'activeMenu'
+									: router.pathname == '/mais-opcoes'
+									? 'activeMenu'
+									: ''
+							}
+						>
 							Serviços
 						</a>
-					</Link>
+						<ul className="linkConteudos">
+							<li>
+								<Link href="/cobranca" onClick={handleMenu}>
+									<a
+										className={
+											router.pathname == '/cobranca' ? 'activeMenu' : ''
+										}
+									>
+										Cobrança
+									</a>
+								</Link>
+							</li>
+							<li>
+								<Link href="/vendas" onClick={handleMenu}>
+									<a
+										className={router.pathname == '/vendas' ? 'activeMenu' : ''}
+									>
+										Vendas
+									</a>
+								</Link>
+							</li>
+							<li>
+								<Link href="/sac" onClick={handleMenu}>
+									<a className={router.pathname == '/sac' ? 'activeMenu' : ''}>
+										SAC
+									</a>
+								</Link>
+							</li>
+							<li>
+								<Link href="/mais-opcoes" onClick={handleMenu}>
+									<a
+										className={
+											router.pathname == '/mais-opcoes' ? 'activeMenu' : ''
+										}
+									>
+										Mais opções
+									</a>
+								</Link>
+							</li>
+						</ul>
+					</S.Dropdown>
 					<Link href="/contato" onClick={handleMenu}>
 						<a className={router.pathname == '/contato' ? 'activeMenu' : ''}>
 							Contato
 						</a>
 					</Link>
-					<Link href="#" onClick={handleMenu}>
-						<a className={router.pathname == '/contato' ? 'activeMenu' : ''}>
+					<Link href="/trabalhe-conosco" onClick={handleMenu}>
+						<a
+							className={
+								router.pathname == '/trabalhe-conosco' ? 'activeMenu' : ''
+							}
+						>
 							Trabalhe conosco
 						</a>
 					</Link>

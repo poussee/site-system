@@ -22,4 +22,8 @@ export const Content = styled.div`
 	.text-400 {
 		max-width: 400px;
 	}
+
+	.text-250 {
+		max-width: 250px;
+	}
 `;

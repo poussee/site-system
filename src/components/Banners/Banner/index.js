@@ -8,7 +8,9 @@ const Banner = (props) => {
 		<S.Container style={{ backgroundImage: `url(${props.background.src})` }}>
 			<S.Content>
 				<h2>{props.title}</h2>
-				<p className="text-400">{props.subtitle}</p>
+				<p className={props.service ? 'text-250' : 'text-400'}>
+					{props.subtitle}
+				</p>
 			</S.Content>
 		</S.Container>
 	);
