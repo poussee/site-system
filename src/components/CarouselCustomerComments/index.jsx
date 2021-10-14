@@ -5,11 +5,13 @@ import '../../../node_modules/slick-carousel/slick/slick-theme.css';
 
 import Image from 'next/dist/client/image';
 
-import FotoDepoimento from '../../../public/assets/cobranca/Foto_Depoimento.png';
-
 import * as S from './styles';
 
 export default class CarouselCustomerComments extends Component {
+	constructor(props) {
+		super(props);
+	}
+
 	render() {
 		const settings = {
 			className: 'center',
@@ -45,12 +47,16 @@ export default class CarouselCustomerComments extends Component {
 							</div>
 							<div className="author">
 								<div className="author-information">
-									<span className="author-name">LUISA MENDONÇA</span>
-									<span>Diretora de produção</span>
-									<span>Empresa X</span>
+									<span className="author-name">{this.props.authorName}</span>
+									<span>{this.props.authorJob}</span>
+									<span>{this.props.authorEnterprise}</span>
 								</div>
 								<div className="author-photo">
-									<Image src={FotoDepoimento} alt="Icone Sac" quality={100} />
+									<Image
+										src={this.props.authorFoto}
+										alt="Foto do author do comentário"
+										quality={100}
+									/>
 								</div>
 							</div>
 						</S.ItemContainer>
@@ -70,12 +76,16 @@ export default class CarouselCustomerComments extends Component {
 							</div>
 							<div className="author">
 								<div className="author-information">
-									<span className="author-name">LUISA MENDONÇA</span>
-									<span>Diretora de produção</span>
-									<span>Empresa X</span>
+									<span className="author-name">{this.props.authorName}</span>
+									<span>{this.props.authorJob}</span>
+									<span>{this.props.authorEnterprise}</span>
 								</div>
 								<div className="author-photo">
-									<Image src={FotoDepoimento} alt="Icone Sac" quality={100} />
+									<Image
+										src={this.props.authorFoto}
+										alt="Foto do author do comentário"
+										quality={100}
+									/>
 								</div>
 							</div>
 						</S.ItemContainer>
@@ -95,12 +105,16 @@ export default class CarouselCustomerComments extends Component {
 							</div>
 							<div className="author">
 								<div className="author-information">
-									<span className="author-name">LUISA MENDONÇA</span>
-									<span>Diretora de produção</span>
-									<span>Empresa X</span>
+									<span className="author-name">{this.props.authorName}</span>
+									<span>{this.props.authorJob}</span>
+									<span>{this.props.authorEnterprise}</span>
 								</div>
 								<div className="author-photo">
-									<Image src={FotoDepoimento} alt="Icone Sac" quality={100} />
+									<Image
+										src={this.props.authorFoto}
+										alt="Foto do author do comentário"
+										quality={100}
+									/>
 								</div>
 							</div>
 						</S.ItemContainer>

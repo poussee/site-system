@@ -6,9 +6,9 @@ import Form from '../components/Form';
 import SolutionBlock from '../components/SolutionBlock';
 import CarouselUniqueServices from '../components/CarouselUniqueServices';
 
-const CustomerCommentsBackground = '/assets/cobranca/Bg_Depoimento.png';
-import bannerBackground from '../../public/assets/banners/banner-cobranca.png';
-import SolutionImage from '/public/assets/cobranca/Imagem_Solucoes.png';
+const CustomerCommentsBackground = '/assets/mais-opcoes/Bg_Depoimento.png';
+import bannerBackground from '../../public/assets/banners/banner-mais-opcoes.png';
+import SolutionImage from '/public/assets/mais-opcoes/Imagem_O-momento.png';
 import FormImage from '../../public/assets/Imagem_Quero-um-orcamento.png';
 import EmpathyImage from '/public/assets/cobranca/Icone_Empatia.png';
 import PlanningImage from '/public/assets/cobranca/Icone_Planejamento.png';
@@ -21,6 +21,7 @@ import ResultsImage from '/public/assets/cobranca/Icone_Foco_Resultados.png';
 import FotoDepoimento from '/public/assets/cobranca/Foto_Depoimento.png';
 
 import * as S from '../styles/servicesCommonStyle';
+import * as T from '../styles/mais-opcoes';
 
 export default function QuemSomos() {
 	return (
@@ -28,26 +29,42 @@ export default function QuemSomos() {
 			<Banner
 				className="banner"
 				background={bannerBackground}
-				title="Cobrança"
-				subtitle="Abordagens com eficiência comprovada para todas as etapas da recuperação de crédito."
+				title="Soluções interativas de relacionamento"
+				subtitle="Uma ampla gama de produtos e serviços para transformar seus contatos em oportunidades."
 				service={true}
 			/>
-			<SolutionBlock
-				color="#cb2378"
-				image={SolutionImage}
-				title={'SOLUÇÃO MULTICANAL E INTEGRADA'}
-				subtitle="O passo que falta para potencializar a rentabilidade de seu negócio."
-				text="A inadimplência dos consumidores pode ser um dos principais
-                obstáculos à lucratividade de uma empresa. Sabendo disso,
-                oferecemos soluções inteligentes com resultados comprovados para
-                todas as etapas do processo de recuperação de crédito."
-				listItems={[
-					'Realizamos os contatos com os clientes em diversas frentes, gerenciando todas as operações com softwares específicos.',
-					'O acompanhamento das métricas e a geração de relatórios garantem a constante otimização das abordagens.',
-					'Todas as bases de dados dos clientes são tratadas por meio de Data Quality. Antes do início das ações de cobrança, as informações são organizadas, padronizadas e validadas.',
-					'Temos um canal interativo que possibilita a realização de negociações de débitos de forma segura, rápida e flexível.',
-				]}
-			/>
+			<T.SolutionContainer>
+				<T.SolutionContent>
+					<div className="solutions-information">
+						<div className="solutions-texts">
+							<p className="solution-title">
+								O momento de inovar é agora.
+								<br />
+								Reinvente sua comunicação.
+							</p>
+							<p>
+								O mundo mudou e, com ele, as formas de se conectar aos clientes.
+								Os avanços tecnológicos trouxeram incríveis possibilidades para
+								as interações entre empresas e consumidores, elevando a
+								eficiência das respostas a um novo patamar.
+							</p>
+							<p>
+								Não faltam opções para sua empresa otimizar a experiência do
+								cliente. Aliando as possibilidades da tecnologia à empatia nas
+								relações, oferecemos variadas ferramentas para negócios que
+								entendem o valor de colocar o consumidor em primeiro lugar.
+							</p>
+							<p className="solution-subtitle">
+								Conheça nossas soluções inovadoras e potencialize seus
+								resultados.
+							</p>
+						</div>
+					</div>
+					<div className="solutions-image">
+						<Image src={SolutionImage} alt="Homem falando ao telefone" />
+					</div>
+				</T.SolutionContent>
+			</T.SolutionContainer>
 			<CarouselUniqueServices
 				firstImage={EmpathyImage}
 				firstDescription={'Empatia e humanização no atendimento'}
@@ -70,6 +87,7 @@ export default function QuemSomos() {
 			/>
 			<CustomerComments
 				BackgroundImage={CustomerCommentsBackground}
+				dif={true}
 				authorName={'ALBERTO PEREIRA'}
 				authorJob={'Diretor de produção'}
 				authorEnterprise={'Empresa X'}

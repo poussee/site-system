@@ -32,10 +32,11 @@ export const CommentsContent = styled.div`
 			.awards-title {
 				display: flex;
 				align-items: top;
+				margin-bottom: 10px;
 
 				h2 {
-					color: black;
-					max-width: 250px;
+					color: ${(props) => (props.dif ? '#cb2378' : 'black')};
+					max-width: 220px;
 					font-weight: 400;
 				}
 
@@ -44,7 +45,7 @@ export const CommentsContent = styled.div`
 					max-width: 60px;
 					margin: 15px 0 0 5%;
 					height: 2px;
-					background-color: black;
+					background-color: ${(props) => (props.dif ? '#cb2378' : 'black')};
 				}
 			}
 

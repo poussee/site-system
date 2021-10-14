@@ -123,7 +123,7 @@ export const ItemContainer = styled.div`
 	}
 
 	.text-baloon {
-		background: url(/assets/cobranca/Depoimento/Balao_Depoimento.png);
+		background: url(/assets/vendas/Depoimento/Balao_Depoimento.png);
 		background-size: 100% 100%;
 		padding: 20px 20px 40px 20px;
 

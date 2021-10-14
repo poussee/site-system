@@ -18,6 +18,7 @@ import InterationImage from '/public/assets/sac/Icone_Interacoes.png';
 import IntegrationImage from '/public/assets/sac/Icone_Integracao.png';
 import ChatBotImage from '/public/assets/sac/Icone_Chatbot.png';
 import NPSImage from '/public/assets/sac/Icone_NPS.png';
+import FotoDepoimento from '/public/assets/cobranca/Foto_Depoimento.png';
 
 import * as S from '../styles/servicesCommonStyle';
 
@@ -69,7 +70,13 @@ export default function QuemSomos() {
 				eighthImage={NPSImage}
 				eighthDescription={'NPS acima da média do mercado'}
 			/>
-			<CustomerComments BackgroundImage={CustomerCommentsBackground} />
+			<CustomerComments
+				BackgroundImage={CustomerCommentsBackground}
+				authorName={'ALBERTO PEREIRA'}
+				authorJob={'Diretor de produção'}
+				authorEnterprise={'Empresa X'}
+				authorFoto={FotoDepoimento}
+			/>
 			<S.FormContainer>
 				<S.FormContent>
 					<div className="form-image">

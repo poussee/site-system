@@ -17,6 +17,7 @@ import FollowImage from '/public/assets/vendas/Icone_acompanhamento.png';
 import CreationImage from '/public/assets/vendas/Icone_Criacao.png';
 import ProcessImage from '/public/assets/vendas/Icone_Processo.png';
 import IntegrationImage from '/public/assets/vendas/Icone_Integracao.png';
+import FotoDepoimento from '/public/assets/cobranca/Foto_Depoimento.png';
 
 import * as S from '../styles/servicesCommonStyle';
 
@@ -64,7 +65,13 @@ export default function QuemSomos() {
 				seventhImage={IntegrationImage}
 				seventhDescription={'Integração dos diversos canais de atendimento'}
 			/>
-			<CustomerComments BackgroundImage={CustomerCommentsBackground} />
+			<CustomerComments
+				BackgroundImage={CustomerCommentsBackground}
+				authorName={'ALBERTO PEREIRA'}
+				authorJob={'Diretor de produção'}
+				authorEnterprise={'Empresa X'}
+				authorFoto={FotoDepoimento}
+			/>
 			<S.FormContainer>
 				<S.FormContent>
 					<div className="form-image">

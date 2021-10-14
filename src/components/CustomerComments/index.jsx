@@ -5,7 +5,7 @@ import * as S from './style';
 export default function CustomerComments(props) {
 	return (
 		<S.CommentsContainer backgroundImage={props.BackgroundImage}>
-			<S.CommentsContent>
+			<S.CommentsContent dif={props.dif}>
 				<div className="row-wrapper">
 					<div className="text-wrapper">
 						<div className="awards-title">
@@ -13,12 +13,17 @@ export default function CustomerComments(props) {
 							<div className="awards-divisor"></div>
 						</div>
 						<p>
-							O reconhecimento é consequência de uma atuação centrada no
-							consumidor e guiada por dados.
+							Confira as opiniões de profissionais que já estão revolucionando a
+							sua comunicação com os consumidores.
 						</p>
 					</div>
 					<div className="carousel-wrapper">
-						<CarouselCustomerComments />
+						<CarouselCustomerComments
+							authorName={props.authorName}
+							authorJob={props.authorJob}
+							authorEnterprise={props.authorEnterprise}
+							authorFoto={props.authorFoto}
+						/>
 					</div>
 				</div>
 			</S.CommentsContent>
