@@ -1,29 +1,35 @@
 import Image from 'next/dist/client/image';
+import { useState, useEffect } from 'react';
 
 import Banner from '../components/Banners/Banner';
 import CustomerComments from '../components/CustomerComments';
 import Form from '../components/Form';
-import SolutionBlock from '../components/SolutionBlock';
 import CarouselUniqueServices from '../components/CarouselUniqueServices';
+import CarouselServicesDesktop from '../components/CarouselServicesDesktop';
+import CarouselServicesMobile from '../components/CarouselServicesMobile';
 
 const CustomerCommentsBackground = '/assets/mais-opcoes/Bg_Depoimento.png';
 import bannerBackground from '../../public/assets/banners/banner-mais-opcoes.png';
 import SolutionImage from '/public/assets/mais-opcoes/Imagem_O-momento.png';
 import FormImage from '../../public/assets/Imagem_Quero-um-orcamento.png';
-import EmpathyImage from '/public/assets/cobranca/Icone_Empatia.png';
-import PlanningImage from '/public/assets/cobranca/Icone_Planejamento.png';
-import ChargeImage from '/public/assets/cobranca/Icone_Processo_cobrança.png';
-import ProductionImage from '/public/assets/cobranca/Icone_Produção.png';
-import AgilityImage from '/public/assets/cobranca/Icone_agilidade.png';
-import CrmImage from '/public/assets/cobranca/Icone_CRM.png';
-import PartnersImage from '/public/assets/cobranca/Icone_parcerias.png';
-import ResultsImage from '/public/assets/cobranca/Icone_Foco_Resultados.png';
 import FotoDepoimento from '/public/assets/cobranca/Foto_Depoimento.png';
 
 import * as S from '../styles/servicesCommonStyle';
 import * as T from '../styles/mais-opcoes';
 
 export default function QuemSomos() {
+	const [screenWidth, setScreenWidth] = useState(null);
+
+	function handleResize() {
+		setScreenWidth(window.screen.width);
+	}
+
+	useEffect(() => {
+		handleResize();
+	}, []);
+
+	window.addEventListener('resize', handleResize);
+
 	return (
 		<>
 			<Banner
@@ -65,26 +71,11 @@ export default function QuemSomos() {
 					</div>
 				</T.SolutionContent>
 			</T.SolutionContainer>
-			<CarouselUniqueServices
-				firstImage={EmpathyImage}
-				firstDescription={'Empatia e humanização no atendimento'}
-				secondImage={PlanningImage}
-				secondDescription={'Planejamento e modelagem estatística'}
-				thirdImage={ChargeImage}
-				thirdDescription={'Processo de cobrança inteligente e eficaz'}
-				fourthImage={ProductionImage}
-				fourthDescription={'Produção e gestão de informações gerenciais'}
-				fifthImage={AgilityImage}
-				fifthDescription={'Agilidade na implantação de processos e operações'}
-				sixthImage={CrmImage}
-				sixthDescription={'Conceitos de CRM aplicados à recuperação de crédito'}
-				seventhImage={PartnersImage}
-				seventhDescription={
-					'Parcerias com outros canais de soluções e fidelização de clientes'
-				}
-				eighthImage={ResultsImage}
-				eighthDescription={'Foco na entrega de resultados'}
-			/>
+			{screenWidth > 768 ? (
+				<CarouselServicesDesktop />
+			) : (
+				<CarouselServicesMobile />
+			)}
 			<CustomerComments
 				BackgroundImage={CustomerCommentsBackground}
 				dif={true}
