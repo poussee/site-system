@@ -28,8 +28,6 @@ export default function QuemSomos() {
 		handleResize();
 	}, []);
 
-	window.addEventListener('resize', handleResize);
-
 	return (
 		<>
 			<Banner
