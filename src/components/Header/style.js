@@ -55,7 +55,7 @@ export const MenuWrapper = styled.div`
 
 export const MenuContainer = styled.div`
 	display: flex;
-	gap: 10px;
+	gap: 20px;
 	width: 60%;
 
 	a,

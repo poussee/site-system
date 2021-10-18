@@ -26,4 +26,13 @@ export const Content = styled.div`
 	.text-250 {
 		max-width: 250px;
 	}
+
+	h2 {
+		font-size: 32px;
+		${(props) =>
+			props.larger
+				? 'max-width:450px; white-space:normal; span{white-space:nowrap;}'
+				: 'max-width:325px;'};
+		margin-bottom: 10px;
+	}
 `;

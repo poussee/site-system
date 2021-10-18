@@ -1,9 +1,97 @@
 import styled from 'styled-components';
 
+export const SolutionContainer = styled.section`
+	width: 100%;
+	background: #cb2378;
+`;
+
+export const SolutionContent = styled.div`
+	display: flex;
+	align-items: center;
+	max-width: 90%;
+	padding: 80px 0;
+	gap: 5%;
+
+	.solutions-image {
+		width: 45%;
+	}
+
+	.solutions-information {
+		display: flex;
+		flex-direction: column;
+		width: 45%;
+		gap: 10px;
+		color: white;
+
+		.solution-title {
+			display: flex;
+			align-items: top;
+
+			h2 {
+				max-width: ${(props) => (props.titleWidth ? props.titleWidth : 'auto')};
+				font-weight: 400;
+			}
+
+			.solution-divisor {
+				width: 60px;
+				max-width: 60px;
+				margin: 15px 0 0 5%;
+				height: 2px;
+				background-color: white;
+			}
+		}
+
+		.solutions-texts {
+			display: flex;
+			flex-direction: column;
+			max-width: 90%;
+			gap: 15px;
+
+			p {
+				font-size: 16px;
+			}
+
+			.solution-subtitle {
+				font-weight: bold;
+				font-size: 22px;
+				max-width: 380px;
+			}
+
+			.call-to-ation {
+				span {
+					font-size: 18px;
+				}
+
+				span:not(:last-child) {
+					padding-bottom: 5px;
+					font-weight: bold;
+					border-bottom: 1px solid white;
+				}
+
+				span:last-child {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	@media (max-width: 768px) {
+		flex-direction: column;
+		width: 85%;
+		max-width: 980px;
+		margin: 0 auto;
+		gap: 60px;
+
+		.solutions-image,
+		.solutions-information {
+			width: 100%;
+		}
+	}
+`;
+
 export const ContainerAboutUs = styled.div`
 	width: 100%;
-	min-height: 60vh;
-	background-image: url(./assets/quem-somos/BG_solucoes_acompanhe.png);
+	background: #5c5c5c;
 	background-size: cover;
 	background-repeat: no-repeat;
 
@@ -20,27 +108,14 @@ export const ContentAboutUs = styled.div`
 	width: 85%;
 	max-width: 968px;
 	margin: 0 auto;
-	padding: 80px 0;
-
-	.about-us-content {
-		margin: 0 auto 80px auto;
-		width: 95%;
-		max-width: 800px;
-		padding: 50px;
-		background-color: white;
-		border-radius: 15px;
-
-		h3 {
-			margin-top: 15px;
-		}
-
-		p {
-			margin: 20px 0;
-		}
-	}
+	padding: 60px 0;
 
 	.about-us-carousel-content {
 		text-align: center;
+
+		h2 {
+			margin-bottom: 10px;
+		}
 	}
 
 	.rec-arrow[disabled] {

@@ -16,8 +16,9 @@ export default function Contato() {
 			<Banner
 				className="banner"
 				background={bannerBackground}
-				title="Contato"
-				subtitle="Um especialista responderá sua mensagem em breve."
+				title="Agora é sua vez!"
+				subtitle="Selecione um canal e mande-nos uma mensagem."
+				service={true}
 			/>
 			<S.FormContainer>
 				<S.FormContent>
@@ -27,8 +28,10 @@ export default function Contato() {
 					<div className="form-holder">
 						<Form
 							title="FALE CONOSCO"
-							subtitle="Preencha os campos abaixo com seus dados."
+							subtitle="Tire todas as suas duvidas, conte um pouco das suas experiências e diga como nós podemos lhe ajudar."
+							subtitle2="Preencha o formulário abaixo e envie-nos a sua mensagem ou ligue para o nosso número."
 							padding={true}
+							subject={true}
 						/>
 					</div>
 				</S.FormContent>
@@ -48,7 +51,7 @@ export default function Contato() {
 			</S.BlackContainer>
 			<S.MapContainer>
 				<S.Map>
-					<div>
+					<div className="text-handler">
 						<div className="title-handler">
 							<h2>ONDE ESTAMOS</h2>
 							<div className="pink-divisor"></div>

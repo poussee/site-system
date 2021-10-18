@@ -66,6 +66,7 @@ export default function Form(props) {
 			<S.FormContainer className="form-content" padding={props.padding}>
 				<h2>{props.title}</h2>
 				<p>{props.subtitle}</p>
+				{props.subtitle2 ? <p className="subtitle2">{props.subtitle2}</p> : ''}
 				<form onSubmit={submitForm}>
 					<input
 						type="text"
@@ -94,30 +95,38 @@ export default function Form(props) {
 						onChange={(e) => setCargo(e.target.value)}
 						required
 					></input>
-					<div className="formSelect" onClick={setSubjectVisibility}>
-						<span>{subject.value}</span>
-						<div
-							className={`formSelectOptions ${showSubject ? 'show' : 'hide'}`}
-						>
-							<span onClick={(e) => getInputSubject(e, 1)}>
-								Quero uma proposta
-							</span>
-							<span onClick={(e) => getInputSubject(e)}>
-								Quero fazer parte do time System
-							</span>
-							<span onClick={(e) => getInputSubject(e, 2)}>
-								Quero ser um parceiro System
-							</span>
-							<span onClick={(e) => getInputSubject(e, 3)}>
-								{' '}
-								Quero fazer uma reclamação
-							</span>
-						</div>
-					</div>
-					{subjectError ? (
-						<span className="error">
-							Favor selecionar um motivo de contato no campo acima.
-						</span>
+					{props.subject ? (
+						<>
+							<div className="formSelect" onClick={setSubjectVisibility}>
+								<span>{subject.value}</span>
+								<div
+									className={`formSelectOptions ${
+										showSubject ? 'show' : 'hide'
+									}`}
+								>
+									<span onClick={(e) => getInputSubject(e, 1)}>
+										Quero uma proposta
+									</span>
+									<span onClick={(e) => getInputSubject(e)}>
+										Quero fazer parte do time System
+									</span>
+									<span onClick={(e) => getInputSubject(e, 2)}>
+										Quero ser um parceiro System
+									</span>
+									<span onClick={(e) => getInputSubject(e, 3)}>
+										{' '}
+										Quero fazer uma reclamação
+									</span>
+								</div>
+							</div>
+							{subjectError ? (
+								<span className="error">
+									Favor selecionar um motivo de contato no campo acima.
+								</span>
+							) : (
+								''
+							)}
+						</>
 					) : (
 						''
 					)}

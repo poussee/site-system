@@ -43,7 +43,7 @@ const Header = () => {
 
 				<S.MenuContainer className={'linkConteudos'} isActive={!mobile}>
 					<Link href="/" onClick={handleMenu}>
-						<a className={router.pathname == '/' ? 'activeMenu' : ''}>Inicio</a>
+						<a className={router.pathname == '/' ? 'activeMenu' : ''}>Início</a>
 					</Link>{' '}
 					<Link href="/quem-somos" onClick={handleMenu}>
 						<a className={router.pathname == '/quem-somos' ? 'activeMenu' : ''}>

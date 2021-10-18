@@ -27,13 +27,16 @@ export const FormContainer = styled.section`
 		font-size: 30px;
 	}
 	p {
-		max-width: 350px;
-		margin: 0 auto;
+		max-width: 370px;
+		margin: 10px auto 0 auto;
 		${(props) => (props.padding ? 'padding: 0 20px;' : '')};
-
 		text-align: center;
 		font-size: 20px;
 		color: white;
+	}
+
+	.subtitle2 {
+		margin-top: 20px;
 	}
 
 	form {

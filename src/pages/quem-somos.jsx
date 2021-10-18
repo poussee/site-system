@@ -6,6 +6,7 @@ import AwardsCarousel from '../components/CarouselAwards';
 import LinkButton from '../components/LinkButton';
 import Tour from '../components/Tour';
 
+import SolutionImage from '/public/assets/quem-somos/IMG_Solucoes_inteligentes.png';
 import bannerBackground from '../../public/assets/banners/banner-quem-somos.png';
 import intelligentSolutions from '../../public/assets/Solucoes-inteligentes.png';
 import joinUs from '../../public/assets/quem-somos/Imagem_junte_se_nos.png';
@@ -24,38 +25,55 @@ export default function QuemSomos() {
 				title="Pioneiros em interações data-driven"
 				subtitle="Criamos novas formas de potencializar o atendimento para construir relacionamentos sustentáveis."
 			/>
+			<S.SolutionContainer>
+				<S.SolutionContent titleWidth={'auto'}>
+					<div className="solutions-image">
+						<Image src={SolutionImage} alt="Homem falando ao telefone" />
+					</div>
+					<div className="solutions-information">
+						<div className="solution-title">
+							<div className="title-handler">
+								<h2>SOLUÇÕES INTELIGENTES</h2>
+							</div>
+							<div className="solution-divisor"></div>
+						</div>
+						<div className="solutions-texts">
+							<p className="solution-subtitle">
+								Conectando empresas e consumidores com abordagens
+								personalizadas.
+							</p>
+							<p>
+								Nossa história teve início em 1996, época em que os meios de
+								comunicação passavam por uma grande transformação e os avanços
+								tecnológicos se tornavam mais frequentes. Desde o início, a
+								inovação fez parte de nossa cultura, assim como a valorização de
+								pessoas.
+							</p>
+							<p>
+								Motivados pela construção de relações sólidas entre marcas e
+								consumidores, desenvolvemos soluções inéditas no mercado
+								brasileiro. Em cada uma, buscamos a individualização pela
+								automação, com o acompanhamento detalhado de todas as etapas.
+							</p>
+							<p>
+								Hoje, contamos com uma ampla variedade de recursos que
+								contemplam desde a qualificação de dados até a ativação
+								omnichannel. Cobrança, SAC, vendas e produtos digitais
+								especialmente desenvolvidos para atender às necessidades de cada
+								negócio: isso tudo é a System.
+							</p>
+							<p className="call-to-ation">
+								<span>Como podemos transformar seus resultados</span>
+								<span> hoje?</span>
+							</p>
+						</div>
+					</div>
+				</S.SolutionContent>
+			</S.SolutionContainer>
 			<S.ContainerAboutUs>
 				<S.ContentAboutUs>
-					<div className="about-us-content">
-						<Image src={intelligentSolutions} alt="alterar" />
-						<h3>
-							Conectando empresas e consumidores com abordagens personalizadas.
-						</h3>
-						<p>
-							Nossa história teve início em 1996, época em que os meios de
-							comunicação passavam por uma grande transformação e os avanços
-							tecnológicos se tornavam mais frequentes. Desde o início, a
-							inovação fez parte de nossa cultura, assim como a valorização de
-							pessoas.
-						</p>
-						<p>
-							Motivados pela construção de relações sólidas entre marcas e
-							consumidores, desenvolvemos soluções inéditas no mercado
-							brasileiro. Em cada uma, buscamos a individualização pela
-							automação, com o acompanhamento detalhado de todas as etapas.
-						</p>
-						<p>
-							Hoje, contamos com uma ampla variedade de recursos que contemplam
-							desde a qualificação de dados até a ativação omnichannel.
-							Cobrança, SAC, vendas e produtos digitais especialmente
-							desenvolvidos para atender às necessidades de cada negócio: isso
-							tudo é a System.
-						</p>
-						<h4>Como podemos transformar seus resultados hoje?</h4>
-						<div className="pink-trace"></div>
-					</div>
 					<div className="about-us-carousel-content">
-						<h2 className="pink-text">Acompanhe nossa trajetória</h2>
+						<h2 className="white-text">Acompanhe nossa trajetória</h2>
 						<p className="white-text">
 							Este é só o começo de uma longa jornada de transformação.
 						</p>

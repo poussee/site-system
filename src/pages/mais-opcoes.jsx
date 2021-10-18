@@ -92,7 +92,7 @@ export default function QuemSomos() {
 					<div className="form-holder">
 						<Form
 							title="FALE CONOSCO"
-							subtitle="Preencha os campos abaixo com seus dados."
+							subtitle="Envie sua mensagem e aguarde nosso retorno."
 							padding={true}
 						/>
 					</div>

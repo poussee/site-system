@@ -21,7 +21,7 @@ export const FormContent = styled.div`
 
 	.form-image {
 		display: flex;
-		align-items: center;
+		align-items: flex-start;
 
 		width: 40%;
 	}
@@ -87,6 +87,7 @@ export const WorkWithUs = styled.div`
 
 	p {
 		color: white;
+		font-size: 20px;
 	}
 
 	a {
@@ -116,23 +117,31 @@ export const Map = styled.div`
 	width: 85%;
 	max-width: 980px;
 	margin: 0 auto;
-	gap: 100px;
+	gap: 50px;
 
-	.title-handler {
+	.text-handler {
 		display: flex;
-		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		width: 30%;
 
-		h2 {
-			color: #bd1661;
-		}
+		.title-handler {
+			display: flex;
+			align-items: center;
+			margin-bottom: 30px;
 
-		.pink-divisor {
-			width: 100%;
-			max-width: 100px;
-			height: 2px;
-			margin-left: 3%;
+			h2 {
+				color: #bd1661;
+			}
 
-			background-color: #bd1661;
+			.pink-divisor {
+				width: 100%;
+				max-width: 100px;
+				height: 2px;
+				margin-left: 3%;
+
+				background-color: #bd1661;
+			}
 		}
 	}
 
@@ -146,6 +155,10 @@ export const Map = styled.div`
 
 	@media (max-width: 768px) {
 		flex-direction: column;
+
+		.text-handler {
+			width: 100%;
+		}
 
 		.map-handler {
 			width: 100%;

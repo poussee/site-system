@@ -87,31 +87,37 @@ export const ItemContainer = styled.div`
 
 export const UpperText = styled.div`
 	display: flex;
-	align-items: center;
+	align-items: flex-end;
 
 	height: 160px;
 	max-width: 311px;
 
 	background: url(/assets/quem-somos/Timeline/timeline/Balao_01.png);
-	background-size: 100% 100%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom;
 
 	p {
-		padding: 10px 20px 20px 20px;
+		padding: 10px 10px 30px 10px;
+		color: white;
 	}
 `;
 
 export const BellowText = styled.div`
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 
 	height: 160px;
 	max-width: 311px;
 
 	background: url(/assets/quem-somos/Timeline/timeline/Balao_02.png);
-	background-size: 100% 100%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: top;
 
 	p {
-		padding: 20px 20px 10px 20px;
+		padding: 30px 10px 10px 10px;
+		color: white;
 	}
 `;
 
