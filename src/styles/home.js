@@ -17,6 +17,10 @@ export const MainContainer = styled.div`
 	.text-400 {
 		max-width: 400px;
 	}
+
+	.text-550 {
+		max-width: 550px;
+	}
 `;
 
 export const Container = styled.div`
@@ -43,19 +47,26 @@ export const ColumnContent = styled.div`
 		.intelligent-solutions-wrapper {
 			display: flex;
 			align-items: center;
-			gap: 10px;
+			gap: 20px;
+			margin-bottom: 20px;
 
 			h2 {
 				color: #cb2378;
+				font-weight: 400;
 			}
 
 			& > div {
 				width: 50%;
 				margin-top: 5px;
-				max-width: 200px;
+				max-width: 250px;
 				background-color: #cb2378;
 				height: 2px;
 			}
+		}
+
+		.solutions-text {
+			font-weight: bold;
+			font-size: 22px;
 		}
 	}
 `;

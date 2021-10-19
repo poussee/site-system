@@ -163,7 +163,7 @@ export default class CarouselUniqueServices extends Component {
 						</Slider>
 					</S.CarouselContainer>
 					<div className="button-handler">
-						<LinkButton link="#" className="button">
+						<LinkButton link="/contato" className="button">
 							Quero uma proposta
 						</LinkButton>
 					</div>

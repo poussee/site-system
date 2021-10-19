@@ -150,7 +150,7 @@ export default class CarouselSolutions extends Component {
 									Gerenciamento da resolução de problemas e reclamações em
 									múltiplos canais de atendimento.
 								</p>
-								<Link href="#">
+								<Link href="/sac">
 									<a className="blueButton">Saiba mais</a>
 								</Link>
 							</div>
@@ -170,7 +170,7 @@ export default class CarouselSolutions extends Component {
 									Abordagens com eficiência comprovada para todas as etapas da
 									recuperação de crédito.
 								</p>
-								<Link href="#">
+								<Link href="/cobranca">
 									<a className="pinkButton">Saiba mais</a>
 								</Link>
 							</div>
@@ -190,7 +190,7 @@ export default class CarouselSolutions extends Component {
 									Desenvolvimento de estratégias que otimizam e potencializam a
 									geração de novos negócios.
 								</p>
-								<Link href="#">
+								<Link href="/vendas">
 									<a className="yellowButton">Saiba mais</a>
 								</Link>
 							</div>
@@ -214,10 +214,10 @@ export default class CarouselSolutions extends Component {
 									Uma ampla gama de produtos e serviços para transformar seus
 									contatos em oportunidades.
 								</p>
-								<Link href="#">
+								<Link href="/mais-opcoes">
 									<a className="purpleButton">Saiba mais</a>
 								</Link>
-							</div>{' '}
+							</div>
 						</S.ItemContainer>
 					</Slider>
 				</S.CarouselContainer>

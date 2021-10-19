@@ -102,7 +102,7 @@ export const FormContent = styled.div`
 	width: 85%;
 	max-width: 980px;
 	margin: 0 auto;
-	gap: 10%;
+	gap: 5%;
 
 	.form-image {
 		display: flex;
@@ -112,7 +112,7 @@ export const FormContent = styled.div`
 	}
 
 	.form-holder {
-		width: 40%;
+		width: 45%;
 	}
 
 	@media (max-width: 768px) {

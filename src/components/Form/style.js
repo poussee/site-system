@@ -31,7 +31,7 @@ export const FormContainer = styled.section`
 		margin: 10px auto 0 auto;
 		${(props) => (props.padding ? 'padding: 0 20px;' : '')};
 		text-align: center;
-		font-size: 20px;
+		font-size: 24px;
 		color: white;
 	}
 
@@ -117,8 +117,9 @@ export const FormContainer = styled.section`
 
 			input {
 				-webkit-appearance: none;
-				background-color: #fafafa;
+				background-color: transparent;
 				border: 2px solid white;
+				border-radius: 5px;
 				display: inline-block;
 				position: relative;
 

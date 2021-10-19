@@ -201,8 +201,8 @@ const Footer = () => {
 			</S.Content>
 			<S.Content>
 				<p>
-					© System Interact 2021. Todos os direitos reservados. Desenvolvido por
-					Agência Poussée.
+					© System Interact 2021. Todos os direitos reservados. Desenvolvido por{' '}
+					<a href="https://www.poussee.com.br">Agência Poussée</a>.
 				</p>
 			</S.Content>
 		</S.Container>

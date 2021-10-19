@@ -29,7 +29,7 @@ export default function Home() {
 							Desenvolvemos relacionamentos sólidos aliando personalização,
 							tecnologia e inteligência de dados.
 						</p>
-						<LinkButton className={'yellowButton'} link={'#'}>
+						<LinkButton className={'yellowButton'} link={'/contato'}>
 							Fale com um especialista
 						</LinkButton>
 					</S.ColumnContent>
@@ -38,10 +38,10 @@ export default function Home() {
 					<S.ColumnContent>
 						<div className="intelligent-solutions">
 							<div className="intelligent-solutions-wrapper">
-								<h2>Soluções Inteligentes</h2>
+								<h2>SOLUÇÕES INTELIGENTES</h2>
 								<div></div>
 							</div>
-							<p className="text-400">
+							<p className="text-550 solutions-text">
 								Mais do que recursos tecnológicos, oferecemos serviços
 								inovadores que elevam os resultados a níveis inéditos.
 							</p>

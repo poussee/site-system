@@ -28,39 +28,39 @@ export const Container = styled.section`
 	}
 `;
 
-export const CarouselMenu = styled.div`
-	display: flex;
-	gap: 10px;
-	justify-content: center;
-	align-items: center;
-	width: 95%;
-	max-width: 980px;
-	margin: 0 auto;
+// export const CarouselMenu = styled.div`
+// 	display: flex;
+// 	gap: 10px;
+// 	justify-content: center;
+// 	align-items: center;
+// 	width: 95%;
+// 	max-width: 980px;
+// 	margin: 0 auto;
 
-	.divisor {
-		width: 30px;
-		height: 1px;
-		background-color: black;
-	}
+// 	.divisor {
+// 		width: 30px;
+// 		height: 1px;
+// 		background-color: black;
+// 	}
 
-	.activeOption {
-		color: #cb2378;
-		text-decoration: underline;
-	}
+// 	.activeOption {
+// 		color: #cb2378;
+// 		text-decoration: underline;
+// 	}
 
-	@media (max-width: 560px) {
-		font-size: 10px;
-		white-space: nowrap;
-	}
+// 	@media (max-width: 560px) {
+// 		font-size: 10px;
+// 		white-space: nowrap;
+// 	}
 
-	@media (min-width: 561px) and (max-width: 768px) {
-		font-size: 14px;
-		white-space: nowrap;
-	}
-`;
+// 	@media (min-width: 561px) and (max-width: 768px) {
+// 		font-size: 14px;
+// 		white-space: nowrap;
+// 	}
+// `;
 
 export const CarouselContainer = styled.div`
-	padding: 50px 0;
+	padding: 50px 0 60px;
 	margin: 0 auto;
 	width: 95%;
 	max-width: 980px;
@@ -123,6 +123,37 @@ export const CarouselContainer = styled.div`
 		position: fixed; /* add this code for position fixed */
 		top: 0px; /* set top and left 0 */
 		left: 0px;
+	}
+
+	.slick-dots {
+		bottom: -50px;
+
+		li button {
+			border: 1px solid black;
+			border-radius: 5px;
+
+			&::before {
+				content: '';
+			}
+
+			&:hover {
+				background: black;
+			}
+		}
+
+		.slick-active button {
+			border: 1px solid black;
+			border-radius: 5px;
+			background: black;
+
+			&::before {
+				content: '';
+			}
+
+			&:hover {
+				background: black;
+			}
+		}
 	}
 `;
 

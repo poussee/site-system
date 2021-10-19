@@ -82,7 +82,7 @@ export default function QuemSomos() {
 					</div>
 					<div className="form-holder">
 						<Form
-							title="FALE CONOSCO"
+							title="QUERO UM ORÇAMENTO"
 							subtitle="Envie sua mensagem e aguarde nosso retorno."
 							padding={true}
 						/>
