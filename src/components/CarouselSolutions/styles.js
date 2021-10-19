@@ -128,22 +128,25 @@ export const CarouselContainer = styled.div`
 	.slick-dots {
 		bottom: -50px;
 
-		li button {
-			border: 1px solid black;
-			border-radius: 5px;
+		li {
+			button {
+				border: 1px solid black;
+				border-radius: 3px;
+				padding: 6px;
+				height: 10px;
+				width: 10px;
 
-			&::before {
-				content: '';
-			}
+				&::before {
+					content: '';
+				}
 
-			&:hover {
-				background: black;
+				&:hover {
+					background: black;
+				}
 			}
 		}
 
 		.slick-active button {
-			border: 1px solid black;
-			border-radius: 5px;
 			background: black;
 
 			&::before {
