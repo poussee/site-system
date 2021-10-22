@@ -52,10 +52,61 @@ export default function TrabalheConosco() {
 					</div>
 				</S.TeamSystemContent>
 			</S.Container>
+			<S.Container background="#cf3884">
+				<S.Together>
+					<div className="text-handler">
+						<div className="title">
+							<h2>
+								RESPEITAMOS AS DIFERENÇAS E APOIAMOS AS EXPRESSÕES INDIVIDUAIS
+							</h2>
+							<S.Divisor maxWidth="60px" color="white" />
+						</div>
+						<p></p>
+						<p></p>
+						<div className="image"></div>
+					</div>
+					<div className="image-handler"></div>
+				</S.Together>
+			</S.Container>
+			<S.Container background="url('')">
+				<S.Life>
+					<div className="text-handler">
+						<div className="title">
+							<h2>A VIDA PODE SER PLENA</h2>
+							<S.Divisor maxWidth="60px" color="black" />
+						</div>
+						<p></p>
+						<p></p>
+						<div className="image"></div>
+					</div>
+					<div className="image-handler"></div>
+				</S.Life>
+			</S.Container>
+			<S.Container background="#F8C304">
+				<S.Specialist>
+					<div className="text-handler">
+						<div className="title">
+							<h2>SEJA UM ESPECIALISTA EM INTERAÇÕES DATA-DRIVEN</h2>
+							<S.Divisor maxWidth="60px" color="#cf3884" />
+						</div>
+						<div className="image"></div>
+					</div>
+					<div className="image-handler"></div>
+				</S.Specialist>
+			</S.Container>
 			<S.FooterContainer background="#5c5c5c">
 				<S.FooterContent>
 					<div className="main-content">
 						<div className="information">
+							<div className="location">
+								<div className="title">
+									<h4>ONDE ESTAMOS</h4>
+									<S.Divisor maxWidth="60px" color="white" />
+								</div>
+								<p>Galpões 1, 2 e 19, Jardim Santa Fé</p>
+								<p>Osasco - São Paulo</p>
+								<p>CEP 06278-010</p>
+							</div>
 							<div className="socials-container">
 								<h4>Conecte-se</h4>
 								<div className="footer-socials-wrapper">

@@ -59,6 +59,39 @@ export const TeamSystemContent = styled.div`
 	}
 `;
 
+export const Divisor = styled.div`
+	width: 100%;
+	max-width: ${(props) => props.maxWidth};
+	height: 2px;
+	margin-left: 3%;
+
+	background-color: ${(props) => props.color};
+`;
+
+export const Together = styled.div`
+	width: 85%;
+	max-width: 980px;
+	margin: 0 auto;
+	padding: 60px 0;
+	color: white;
+`;
+
+export const Life = styled.div`
+	width: 85%;
+	max-width: 980px;
+	margin: 0 auto;
+	padding: 60px 0;
+	color: black;
+`;
+
+export const Specialist = styled.div`
+	width: 85%;
+	max-width: 980px;
+	margin: 0 auto;
+	padding: 60px 0;
+	color: black;
+`;
+
 export const FooterContent = styled.div`
 	width: 85%;
 	max-width: 980px;
@@ -85,9 +118,27 @@ export const FooterContent = styled.div`
 			flex-direction: column;
 			justify-content: space-between;
 
+			h4 {
+				font-size: 18px;
+			}
+
+			.location {
+				.title {
+					display: flex;
+					align-items: center;
+				}
+
+				h4 {
+					font-weight: 400;
+				}
+				p {
+					font-size: 14px;
+					margin-top: 10px;
+				}
+			}
+
 			.socials-container {
 				h4 {
-					font-size: 20px;
 					margin-bottom: 10px;
 				}
 
@@ -108,6 +159,10 @@ export const FooterContent = styled.div`
 					}
 				}
 			}
+
+			.img-container {
+				max-width: 105px;
+			}
 		}
 
 		.map-container {
@@ -122,5 +177,23 @@ export const FooterContent = styled.div`
 	.company-rights {
 		display: flex;
 		justify-content: space-between;
+	}
+
+	@media (max-width: 768px) {
+		.company-rights,
+		.main-content {
+			flex-direction: column;
+		}
+
+		.main-content {
+			.information {
+				gap: 20px;
+			}
+
+			.map-container {
+				width: 100%;
+				max-width: 100%;
+			}
+		}
 	}
 `;

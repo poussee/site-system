@@ -98,8 +98,9 @@ export const UpperText = styled.div`
 	background-position: bottom;
 
 	p {
-		padding: 10px 10px 40px 10px;
+		padding: 10px 20px 45px 20px;
 		color: white;
+		font-size: 14px;
 	}
 `;
 
@@ -116,8 +117,9 @@ export const BellowText = styled.div`
 	background-position: top;
 
 	p {
-		padding: 40px 10px 10px 10px;
+		padding: 45px 20px 10px 20px;
 		color: white;
+		font-size: 14px;
 	}
 `;
 
@@ -133,5 +135,9 @@ export const ImgContainer = styled.div`
 
 	& > img {
 		max-height: 355px;
+	}
+
+	@media screen and (max-width: 768px) {
+		${(props) => (props.padding ? 'padding-top:0px;' : 'padding-bottom:0px;')};
 	}
 `;
