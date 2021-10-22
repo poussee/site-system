@@ -24,15 +24,19 @@ export const Container = styled.div`
 		}
 	}
 
+	p,
+	li {
+		font-size: 12px;
+	}
+
+	a:hover {
+		text-decoration: underline;
+	}
+
 	@media (max-width: 768px) {
 		.flex-column {
 			margin: 20px 0 40px;
 		}
-	}
-
-	p,
-	li {
-		font-size: 14px;
 	}
 `;
 
@@ -46,10 +50,12 @@ export const Content = styled.div`
 	z-index: 400;
 	padding: 10px 0;
 	position: relative;
+	gap: 60px;
 
 	.img-container {
+		margin-top: 40px;
 		width: 100%;
-		max-width: 130px;
+		max-width: 110px;
 	}
 	img {
 		width: 170px;
@@ -81,6 +87,10 @@ export const Content = styled.div`
 		margin-bottom: 5px;
 	}
 
+	ul {
+		padding-left: 15px;
+	}
+
 	h4 {
 		font-size: 20px;
 	}
@@ -89,10 +99,16 @@ export const Content = styled.div`
 		display: flex;
 		align-items: center;
 		gap: 20px;
+		height: 30px;
 
 		i {
 			font-size: 22px;
 			color: var(--yellow);
+
+			&:hover {
+				font-size: 24px;
+				margin-left: -1.6px;
+			}
 		}
 	}
 
@@ -100,11 +116,13 @@ export const Content = styled.div`
 		margin-bottom: 10px;
 	}
 
-	@media screen and (max-width: 900px) {
-		padding: 0 20px;
-	}
-
 	@media screen and (max-width: 768px) {
 		flex-direction: column;
+	}
+
+	@media screen and (max-width: 500px) {
+		.our-solutions {
+			flex-wrap: wrap;
+		}
 	}
 `;

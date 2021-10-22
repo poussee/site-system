@@ -156,34 +156,6 @@ export const AwardsContent = styled.div`
 			justify-content: flex-start;
 		}
 
-		.text-wrapper {
-			width: fit-content;
-
-			.awards-title {
-				display: flex;
-				align-items: center;
-
-				h2 {
-					color: #c72376;
-					white-space: nowrap;
-				}
-
-				.awards-divisor {
-					width: 60px;
-					max-width: 60px;
-					margin: 0 0 0 5%;
-					height: 2px;
-					background-color: #c72376;
-				}
-			}
-
-			p {
-				font-weight: bold;
-				font-size: 20px;
-				max-width: 290px;
-			}
-		}
-
 		.carousel-wrapper {
 			width: 100%;
 		}

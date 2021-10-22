@@ -35,4 +35,14 @@ export const Content = styled.div`
 				: 'max-width:325px;'};
 		margin-bottom: 10px;
 	}
+
+	.button {
+		width: fit-content;
+		margin-top: 20px;
+		padding: 10px 20px;
+		background-color: var(--yellow);
+		border: 1px solid var(--yellow);
+		border-radius: 10px;
+		color: black;
+	}
 `;

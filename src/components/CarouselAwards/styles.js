@@ -25,85 +25,140 @@ export const Container = styled.section`
 	}
 `;
 
-export const CarouselContainer = styled.div`
+export const Content = styled.div`
+	display: flex;
+	flex-direction: column;
 	width: 100%;
+	gap: 60px;
 
-	.rec-swipable {
-		align-items: center;
-	}
-	.rec-arrow-left {
-		display: none;
-	}
-	.rec-arrow-right {
-		background: none;
-		color: #0182b0;
-		box-shadow: none;
-		font-size: 40px;
-		font-weight: bolder;
-		&:hover,
-		&:focus {
-			background: none;
-			color: #0182b0;
-			box-shadow: none;
+	.unique-items,
+	.two-items {
+		display: flex;
+		justify-content: space-between;
+
+		& > div {
+			width: 45%;
 		}
 	}
-	.rec-dot_active {
-		background: black;
-	}
-	.rec-dot {
-		display: none;
-	}
 
-	.rec-arrow[disabled] {
-		opacity: 0;
-		pointer-events: none;
+	.unique-items {
+		& > .award {
+			border: 2px solid #cf3884;
+			border-radius: 20px;
+		}
 	}
 
-	.slider-container {
-		width: 100%;
-		height: 100%;
-		position: fixed; /* add this code for position fixed */
-		top: 0px; /* set top and left 0 */
-		left: 0px;
-	}
-`;
-
-export const ItemContainer = styled.div`
-	width: 100%;
-
-	& > p {
-		width: 100px;
-
-		font-size: 1.5em;
-		text-align: center;
-		color: #c72376;
-		font-weight: bold;
+	.two-items {
+		position: relative;
+		border: 2px solid #cf3884;
+		border-radius: 20px;
 	}
 
-	& > div {
+	.award {
+		position: relative;
 		display: flex;
 		gap: 20px;
+		padding: 30px 20px;
+
+		.award-text {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			gap: 10px;
+
+			p {
+				max-width: 250px;
+			}
+		}
 	}
 
-	.award-text {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		gap: 10px;
+	.text-wrapper {
+		width: 45%;
+
+		.awards-title {
+			display: flex;
+			align-items: center;
+			margin-bottom: 10px;
+
+			h2 {
+				color: #c72376;
+				white-space: wrap;
+				font-size: 26px;
+				font-weight: 400;
+			}
+
+			.awards-divisor {
+				min-width: 30px;
+				width: 100%;
+				max-width: 100px;
+				margin: 0 0 0 5%;
+				height: 2px;
+				background-color: #c72376;
+			}
+		}
+
+		p {
+			font-weight: bold;
+			font-size: 20px;
+			max-width: 290px;
+		}
 	}
 
 	@media (max-width: 768px) {
 		width: 100%;
 
-		& > div {
+		.unique-items,
+		.two-items {
 			display: flex;
-			width: 100%;
-			gap: 20px;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+
+			& > div {
+				width: 100%;
+			}
+		}
+
+		.unique-items {
+			gap: 60px;
+		}
+
+		.award {
+			justify-content: center;
+		}
+	}
+
+	@media (max-width: 500px) {
+		.award {
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+
+			.award-text {
+				width: 100%;
+
+				p {
+					max-width: 100%;
+					text-align: center;
+				}
+			}
 		}
 	}
 `;
 
 export const ImgContainer = styled.div`
 	min-width: 100px;
+	max-width: 100px;
 	object-fit: contain;
+`;
+
+export const YearImg = styled.div`
+	position: absolute;
+	top: -12px;
+	left: 60px;
+	min-width: 79px;
+	max-width: 79px;
+	padding: 0 10px;
+	object-fit: contain;
+	background: white;
 `;

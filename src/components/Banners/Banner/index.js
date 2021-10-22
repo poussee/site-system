@@ -14,6 +14,11 @@ const Banner = (props) => {
 				<p className={props.service ? 'text-250' : 'text-400'}>
 					{props.subtitle}
 				</p>
+				{props.button != null && (
+					<Link href="/contato">
+						<a className="button">{props.button}</a>
+					</Link>
+				)}
 			</S.Content>
 		</S.Container>
 	);

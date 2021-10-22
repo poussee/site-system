@@ -92,13 +92,13 @@ export const UpperText = styled.div`
 	height: 160px;
 	max-width: 311px;
 
-	background: url(/assets/quem-somos/Timeline/timeline/Balao_01.png);
+	background: url(/assets/quem-somos/Timeline/timeline_atual/Balao_01.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: bottom;
 
 	p {
-		padding: 10px 10px 30px 10px;
+		padding: 10px 10px 40px 10px;
 		color: white;
 	}
 `;
@@ -110,13 +110,13 @@ export const BellowText = styled.div`
 	height: 160px;
 	max-width: 311px;
 
-	background: url(/assets/quem-somos/Timeline/timeline/Balao_02.png);
+	background: url(/assets/quem-somos/Timeline/timeline_atual/Balao_02.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: top;
 
 	p {
-		padding: 30px 10px 10px 10px;
+		padding: 40px 10px 10px 10px;
 		color: white;
 	}
 `;

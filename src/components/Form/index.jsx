@@ -143,7 +143,7 @@ export default function Form(props) {
 						<label htmlFor="home-form">
 							Estou ciente das condições de tratamento dos meus dados pessoais e
 							dou meu consentimento, quando aplicável, conforme descrito na
-							<a> Política de Privacidade</a>.
+							<a href="/politica-de-privacidade"> Política de Privacidade</a>.
 						</label>
 					</div>
 					<div className="home-form-button-container">

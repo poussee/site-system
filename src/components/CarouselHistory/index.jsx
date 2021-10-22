@@ -1,15 +1,15 @@
 import CarouselItem from 'react-elastic-carousel';
 import Image from 'next/dist/client/image';
 
-import item1 from '../../../public/assets/quem-somos/Timeline/timeline/1996.png';
-import item2 from '../../../public/assets/quem-somos/Timeline/timeline/2000.png';
-import item3 from '../../../public/assets/quem-somos/Timeline/timeline/2005.png';
-import item4 from '../../../public/assets/quem-somos/Timeline/timeline/2006.png';
-import item5 from '../../../public/assets/quem-somos/Timeline/timeline/2008.png';
-import item6 from '../../../public/assets/quem-somos/Timeline/timeline/2011.png';
-import item7 from '../../../public/assets/quem-somos/Timeline/timeline/2015.png';
-import item8 from '../../../public/assets/quem-somos/Timeline/timeline/2016.png';
-import item9 from '../../../public/assets/quem-somos/Timeline/timeline/2020.png';
+import item1 from '../../../public/assets/quem-somos/Timeline/timeline_atual/1996.png';
+import item2 from '../../../public/assets/quem-somos/Timeline/timeline_atual/2000.png';
+import item3 from '../../../public/assets/quem-somos/Timeline/timeline_atual/2005.png';
+import item4 from '../../../public/assets/quem-somos/Timeline/timeline_atual/2006.png';
+import item5 from '../../../public/assets/quem-somos/Timeline/timeline_atual/2008.png';
+import item6 from '../../../public/assets/quem-somos/Timeline/timeline_atual/2011.png';
+import item7 from '../../../public/assets/quem-somos/Timeline/timeline_atual/2015.png';
+import item8 from '../../../public/assets/quem-somos/Timeline/timeline_atual/2016.png';
+import item9 from '../../../public/assets/quem-somos/Timeline/timeline_atual/2020.png';
 
 import * as S from './styles';
 

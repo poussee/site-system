@@ -85,19 +85,7 @@ export default function QuemSomos() {
 			<S.Container>
 				<S.AwardsContent>
 					<div className="row-wrapper">
-						<div className="text-wrapper">
-							<div className="awards-title">
-								<h2>NOSSAS CONQUISTAS</h2>
-								<div className="awards-divisor"></div>
-							</div>
-							<p>
-								O reconhecimento é consequência de uma atuação centrada no
-								consumidor e guiada por dados.
-							</p>
-						</div>
-						<div className="carousel-wrapper">
-							<AwardsCarousel />
-						</div>
+						<AwardsCarousel />
 					</div>
 				</S.AwardsContent>
 			</S.Container>
