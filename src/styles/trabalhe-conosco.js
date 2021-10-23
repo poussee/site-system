@@ -59,37 +59,117 @@ export const TeamSystemContent = styled.div`
 	}
 `;
 
-export const Divisor = styled.div`
+export const Divisor = styled.span`
+	display: block;
 	width: 100%;
 	max-width: ${(props) => props.maxWidth};
 	height: 2px;
-	margin-left: 3%;
+	margin-left: 5px;
 
 	background-color: ${(props) => props.color};
 `;
 
 export const Together = styled.div`
+	display: flex;
+	justify-content: space-between;
 	width: 85%;
 	max-width: 980px;
 	margin: 0 auto;
-	padding: 60px 0;
+	padding: 80px 0;
 	color: white;
+
+	.image-handler {
+		width: 40%;
+	}
+
+	.text-handler {
+		width: 40%;
+		padding-right: 30px;
+
+		.title h2 {
+			margin-bottom: 20px;
+			span {
+				display: inline-block;
+				margin-bottom: 6px;
+			}
+		}
+
+		p {
+			margin: 10px 0 20px;
+		}
+	}
 `;
 
 export const Life = styled.div`
+	display: flex;
+	justify-content: space-between;
 	width: 85%;
 	max-width: 980px;
-	margin: 0 auto;
-	padding: 60px 0;
+	padding: 80px 0 60px 100px;
 	color: black;
+
+	.image-handler {
+		width: 50%;
+	}
+
+	.text-handler {
+		width: 40%;
+
+		.title h2 {
+			max-width: 190px;
+			margin-bottom: 20px;
+			span {
+				display: inline-block;
+				margin-bottom: 6px;
+			}
+		}
+
+		p {
+			margin: 10px 0 20px;
+		}
+	}
 `;
 
 export const Specialist = styled.div`
+	display: flex;
+	justify-content: space-between;
 	width: 85%;
 	max-width: 980px;
 	margin: 0 auto;
-	padding: 60px 0;
+	padding: 80px 0;
 	color: black;
+
+	.image-handler {
+		width: 45%;
+	}
+
+	.text-handler {
+		width: 40%;
+
+		.title {
+			display: flex;
+			align-items: center;
+
+			h2 {
+				color: #b61f6c;
+				margin-bottom: 10px;
+			}
+		}
+
+		p {
+			margin: 10px 0 40px;
+			font-weight: bold;
+			font-size: 22px;
+		}
+
+		a {
+			color: white;
+			padding: 10px 20px;
+			border: 1px solid #b61f6c;
+			border-radius: 10px;
+			background: #b61f6c;
+		}
+	}
 `;
 
 export const FooterContent = styled.div`

@@ -58,11 +58,18 @@ export default function TrabalheConosco() {
 						<div className="title">
 							<h2>
 								RESPEITAMOS AS DIFERENÇAS E APOIAMOS AS EXPRESSÕES INDIVIDUAIS
+								<S.Divisor maxWidth="60px" color="white" />
 							</h2>
-							<S.Divisor maxWidth="60px" color="white" />
 						</div>
-						<p></p>
-						<p></p>
+						<p>
+							A System Interacts é composta por pessoas. Pessoas de todas as
+							idades, de todas as crenças, de todas as vivências, de todas as
+							cores.
+						</p>
+						<p>
+							Valorizamos cada forma de viver. Pois é por meio da diversidade
+							que ficaremos mais fortes.
+						</p>
 						<div className="image"></div>
 					</div>
 					<div className="image-handler"></div>
@@ -70,16 +77,24 @@ export default function TrabalheConosco() {
 			</S.Container>
 			<S.Container background="url('')">
 				<S.Life>
+					<div className="image-handler"></div>
 					<div className="text-handler">
 						<div className="title">
-							<h2>A VIDA PODE SER PLENA</h2>
-							<S.Divisor maxWidth="60px" color="black" />
+							<h2>
+								A VIDA PODE SER PLENA
+								<S.Divisor maxWidth="60px" color="black" />
+							</h2>
 						</div>
-						<p></p>
-						<p></p>
-						<div className="image"></div>
+						<p>
+							Para Aristóteles, a função do trabalho é garantir a plenitude do
+							ser humano. Aqui na System, nós acreditamos que a qualidade de
+							vida vem em primeiro lugar.
+						</p>
+						<p>
+							O bem-estar é primordial. E nossa cultura preza pela saúde física
+							e mental de todos os profissionais.
+						</p>
 					</div>
-					<div className="image-handler"></div>
 				</S.Life>
 			</S.Container>
 			<S.Container background="#F8C304">
@@ -89,7 +104,13 @@ export default function TrabalheConosco() {
 							<h2>SEJA UM ESPECIALISTA EM INTERAÇÕES DATA-DRIVEN</h2>
 							<S.Divisor maxWidth="60px" color="#cf3884" />
 						</div>
-						<div className="image"></div>
+						<p>
+							Se você também deseja ser protagonista na construção do futuro da
+							experiência do cliente, faça parte do nosso time!
+						</p>
+						<Link href="/contato">
+							<a>Trabalhe conosco</a>
+						</Link>
 					</div>
 					<div className="image-handler"></div>
 				</S.Specialist>
