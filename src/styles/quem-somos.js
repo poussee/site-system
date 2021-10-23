@@ -108,7 +108,7 @@ export const ContentAboutUs = styled.div`
 	width: 85%;
 	max-width: 968px;
 	margin: 0 auto;
-	padding: 60px 0;
+	padding: 80px 0 20px;
 
 	.about-us-carousel-content {
 		text-align: center;

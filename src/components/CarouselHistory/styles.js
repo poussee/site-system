@@ -136,8 +136,4 @@ export const ImgContainer = styled.div`
 	& > img {
 		max-height: 355px;
 	}
-
-	@media screen and (max-width: 768px) {
-		${(props) => (props.padding ? 'padding-top:0px;' : 'padding-bottom:0px;')};
-	}
 `;

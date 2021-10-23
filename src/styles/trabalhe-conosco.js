@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 
 export const Container = styled.section`
-	${(props) => `background: ${props.background}`}
+	${(props) => `background: ${props.background}`};
+	background-size: cover;
+	background-position: center;
 `;
 
 export const FooterContainer = styled.footer`
@@ -79,7 +81,7 @@ export const Together = styled.div`
 	color: white;
 
 	.image-handler {
-		width: 40%;
+		width: 55%;
 	}
 
 	.text-handler {
@@ -96,6 +98,25 @@ export const Together = styled.div`
 
 		p {
 			margin: 10px 0 20px;
+		}
+	}
+
+	@media (max-width: 768px) {
+		flex-direction: column;
+		gap: 0px;
+
+		.image-handler {
+			width: 100%;
+		}
+
+		.text-handler {
+			width: 100%;
+
+			.image {
+				display: flex;
+				justify-content: center;
+				margin-top: 60px;
+			}
 		}
 	}
 `;
@@ -126,6 +147,30 @@ export const Life = styled.div`
 
 		p {
 			margin: 10px 0 20px;
+		}
+	}
+
+	@media (max-width: 768px) {
+		flex-direction: column-reverse;
+		gap: 60px;
+		margin: 0 auto;
+		padding: 60px 0;
+
+		.image-handler {
+			width: 100%;
+		}
+
+		.text-handler {
+			width: 100%;
+
+			.title h2 {
+				max-width: 100%;
+			}
+
+			.image {
+				display: flex;
+				justify-content: center;
+			}
 		}
 	}
 `;
@@ -168,6 +213,33 @@ export const Specialist = styled.div`
 			border: 1px solid #b61f6c;
 			border-radius: 10px;
 			background: #b61f6c;
+		}
+	}
+
+	@media (max-width: 768px) {
+		flex-direction: column;
+		gap: 60px;
+
+		.image-handler {
+			width: 100%;
+		}
+
+		.text-handler {
+			width: 100%;
+
+			.title {
+				flex-direction: column;
+				align-items: flex-start;
+			}
+
+			h2 {
+				max-width: 320px;
+			}
+
+			.image {
+				display: flex;
+				justify-content: center;
+			}
 		}
 	}
 `;
@@ -234,7 +306,7 @@ export const FooterContent = styled.div`
 
 						&:hover {
 							font-size: 24px;
-							margin-left: -1.6px;
+							margin-left: -3.8px;
 						}
 					}
 				}
@@ -257,6 +329,14 @@ export const FooterContent = styled.div`
 	.company-rights {
 		display: flex;
 		justify-content: space-between;
+
+		p {
+			font-size: 12px;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
 	}
 
 	@media (max-width: 768px) {

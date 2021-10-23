@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
 	width: 100%;
-	height: 60vh;
+	height: fit-content;
+	padding: 60px 0;
 	background-size: cover;
 	background-repeat: no-repeat;
 `;

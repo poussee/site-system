@@ -7,6 +7,10 @@ import GoogleMaps from '../components/Map';
 import bannerBackground from '../../public/assets/banners/banner-trabalhe-conosco.png';
 import teamSystem from '../../public/assets/trabalhe-conosco/time.png';
 import systemVideo from '../../public/assets/trabalhe-conosco/Video.png';
+import togetherSystem from '../../public/assets/trabalhe-conosco/Juntos-somos-system.png';
+import togetherPictures from '../../public/assets/trabalhe-conosco/Imagem_Respeitamos.png';
+import systemLife from '../../public/assets/trabalhe-conosco/Imagem_Vida-plena.png';
+import speacilist from '../../public/assets/trabalhe-conosco/Imagem_Seja-especialista.png';
 import logoRodape from '../../public/assets/Logo-Rodape.png';
 
 import * as S from '../styles/trabalhe-conosco';
@@ -70,14 +74,20 @@ export default function TrabalheConosco() {
 							Valorizamos cada forma de viver. Pois é por meio da diversidade
 							que ficaremos mais fortes.
 						</p>
-						<div className="image"></div>
+						<div className="image">
+							<Image src={togetherSystem} quality={100} />
+						</div>
 					</div>
-					<div className="image-handler"></div>
+					<div className="image-handler">
+						<Image src={togetherPictures} quality={100} />
+					</div>
 				</S.Together>
 			</S.Container>
-			<S.Container background="url('')">
+			<S.Container background="url('/assets/trabalhe-conosco/BG_Vida-plena.png')">
 				<S.Life>
-					<div className="image-handler"></div>
+					<div className="image-handler">
+						<Image src={systemLife} quality={100} />
+					</div>
 					<div className="text-handler">
 						<div className="title">
 							<h2>
@@ -112,7 +122,9 @@ export default function TrabalheConosco() {
 							<a>Trabalhe conosco</a>
 						</Link>
 					</div>
-					<div className="image-handler"></div>
+					<div className="image-handler">
+						<Image src={speacilist} quality={100} />
+					</div>
 				</S.Specialist>
 			</S.Container>
 			<S.FooterContainer background="#5c5c5c">
