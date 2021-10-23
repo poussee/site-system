@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Router from 'next/router';
 import axios from 'axios';
+import Link from 'next/dist/client/link';
 
 import * as S from './style';
 
@@ -142,8 +143,11 @@ export default function Form(props) {
 						<input type="checkbox" id="home-form" required></input>
 						<label htmlFor="home-form">
 							Estou ciente das condições de tratamento dos meus dados pessoais e
-							dou meu consentimento, quando aplicável, conforme descrito na
-							<a href="/politica-de-privacidade"> Política de Privacidade</a>.
+							dou meu consentimento, quando aplicável, conforme descrito na{' '}
+							<Link href="/politica-de-privacidade">
+								<a>Política de Privacidade</a>
+							</Link>
+							.
 						</label>
 					</div>
 					<div className="home-form-button-container">

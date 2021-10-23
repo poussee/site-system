@@ -26,13 +26,18 @@ export const FormContainer = styled.section`
 		text-align: center;
 		font-size: 30px;
 	}
+
 	p {
 		max-width: 370px;
 		margin: 10px auto 0 auto;
 		${(props) => (props.padding ? 'padding: 0 20px;' : '')};
 		text-align: center;
-		font-size: 24px;
+		font-size: 20px;
 		color: white;
+	}
+
+	a:hover {
+		text-decoration: underline;
 	}
 
 	.subtitle2 {
