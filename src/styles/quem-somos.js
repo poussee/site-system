@@ -63,8 +63,9 @@ export const SolutionContent = styled.div`
 				}
 
 				span:not(:last-child) {
-					padding-bottom: 5px;
 					font-weight: bold;
+					line-height: 28px;
+					padding-bottom: 2.5px;
 					border-bottom: 1px solid white;
 				}
 

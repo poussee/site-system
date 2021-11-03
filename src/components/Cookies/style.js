@@ -32,6 +32,7 @@ export const Content = styled.div`
 		display: flex;
 		align-items: center;
 		width: fit-content;
+		font-size: 12px;
 
 		a {
 			text-decoration: underline;

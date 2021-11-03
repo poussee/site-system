@@ -162,11 +162,11 @@ export default class CarouselUniqueServices extends Component {
 							</S.ItemContainer>
 						</Slider>
 					</S.CarouselContainer>
-					<div className="button-handler">
+					{/* <div className="button-handler">
 						<LinkButton link="/contato" className="button">
 							Quero uma proposta
 						</LinkButton>
-					</div>
+					</div> */}
 				</S.Content>
 			</S.Container>
 		);

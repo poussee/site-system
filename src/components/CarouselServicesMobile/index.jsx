@@ -80,9 +80,6 @@ export default class CarouselServicesMobile extends Component {
 										profissionais, ou parcial, fornecendo somente as
 										ferramentas.
 									</p>
-									<LinkButton link="#" className="button">
-										Solicite um orçamento
-									</LinkButton>
 								</div>
 								<div className="image-handler">
 									<Image src={HomeOffice} quality={100} />
@@ -97,9 +94,6 @@ export default class CarouselServicesMobile extends Component {
 										<div className="divisor"></div>
 									</div>
 									<p>Atuamos com Experian há mais de 10 anos.</p>
-									<LinkButton link="#" className="button">
-										Solicite um orçamento
-									</LinkButton>
 								</div>
 								<div className="image-handler">
 									<Image src={Research} quality={100} />
@@ -120,9 +114,6 @@ export default class CarouselServicesMobile extends Component {
 										negócio. Por isso, treinamos agentes para realizar ofertas
 										atrativas, fidelizando os consumidores.
 									</p>
-									<LinkButton link="#" className="button">
-										Solicite um orçamento
-									</LinkButton>
 								</div>
 								<div className="image-handler">
 									<Image src={Retention} quality={100} />
@@ -144,9 +135,6 @@ export default class CarouselServicesMobile extends Component {
 										dar andamento a todas as demandas que chegam para a equipe
 										de atendimento.
 									</p>
-									<LinkButton link="#" className="button">
-										Solicite um orçamento
-									</LinkButton>
 								</div>
 								<div className="image-handler">
 									<Image src={Backoffice} quality={100} />
@@ -167,9 +155,6 @@ export default class CarouselServicesMobile extends Component {
 										agentes treinados para solucionar demandas de variadas
 										complexidades.
 									</p>
-									<LinkButton link="#" className="button">
-										Solicite um orçamento
-									</LinkButton>
 								</div>
 								<div className="image-handler">
 									<Image src={Support} quality={100} />
@@ -190,9 +175,6 @@ export default class CarouselServicesMobile extends Component {
 										soluções no local e preparar profissionais para dar
 										continuidade e sustentação a elas.
 									</p>
-									<LinkButton link="#" className="button">
-										Solicite um orçamento
-									</LinkButton>
 								</div>
 								<div className="image-handler">
 									<Image src={Bodyshop} quality={100} />
@@ -214,9 +196,6 @@ export default class CarouselServicesMobile extends Component {
 										técnica, que compreende equipamentos como DAC, gravador e
 										PABX.
 									</p>
-									<LinkButton link="#" className="button">
-										Solicite um orçamento
-									</LinkButton>
 								</div>
 								<div className="image-handler">
 									<Image src={Infrastructure} quality={100} />
@@ -238,9 +217,6 @@ export default class CarouselServicesMobile extends Component {
 										várias vertentes, possibilita uma intervenção mais
 										humanizada.
 									</p>
-									<LinkButton link="#" className="button">
-										Solicite um orçamento
-									</LinkButton>
 								</div>
 								<div className="image-handler">
 									<Image src={HumanPersona} quality={100} />
@@ -260,9 +236,6 @@ export default class CarouselServicesMobile extends Component {
 										experiência do cliente, seja em um novo canal,
 										autoatendimento ou otimização de processos.
 									</p>
-									<LinkButton link="#" className="button">
-										Solicite um orçamento
-									</LinkButton>
 								</div>
 								<div className="image-handler">
 									<Image src={Ux} quality={100} />
@@ -283,9 +256,6 @@ export default class CarouselServicesMobile extends Component {
 										atendimento nas redes sociais, que gerencia operações para
 										empresas de diversos setores.
 									</p>
-									<LinkButton link="#" className="button">
-										Solicite um orçamento
-									</LinkButton>
 								</div>
 								<div className="image-handler">
 									<Image src={SocialCare} quality={100} />
@@ -305,9 +275,6 @@ export default class CarouselServicesMobile extends Component {
 										as abordagens porta a porta e realizamos o constante
 										acompanhamento dos resultados para aprimorar a solução.
 									</p>
-									<LinkButton link="#" className="button">
-										Solicite um orçamento
-									</LinkButton>
 								</div>
 								<div className="image-handler">
 									<Image src={DoorToDoor} quality={100} />
@@ -328,9 +295,6 @@ export default class CarouselServicesMobile extends Component {
 										pessoais e últimas compras. Assim, é possível oferecer um
 										atendimento individualizado.
 									</p>
-									<LinkButton link="#" className="button">
-										Solicite um orçamento
-									</LinkButton>
 								</div>
 								<div className="image-handler">
 									<Image src={CRM} quality={100} />
@@ -351,9 +315,6 @@ export default class CarouselServicesMobile extends Component {
 										equipe. Com análises em tempo real e relatórios gerenciais,
 										favorece a otimização da experiência do cliente.
 									</p>
-									<LinkButton link="#" className="button">
-										Solicite um orçamento
-									</LinkButton>
 								</div>
 								<div className="image-handler">
 									<Image src={SocialPlatform} quality={100} />
@@ -374,9 +335,6 @@ export default class CarouselServicesMobile extends Component {
 										ou inteligência artificial, de acordo com a estratégia de
 										comunicação adotada.
 									</p>
-									<LinkButton link="#" className="button">
-										Solicite um orçamento
-									</LinkButton>
 								</div>
 								<div className="image-handler">
 									<Image src={Chatbot} quality={100} />
@@ -398,9 +356,6 @@ export default class CarouselServicesMobile extends Component {
 										disponibilidade – pode ficar online 24 horas por dia, 7 dias
 										por semana.
 									</p>
-									<LinkButton link="#" className="button">
-										Solicite um orçamento
-									</LinkButton>
 								</div>
 								<div className="image-handler">
 									<Image src={DigitalAgent} quality={100} />
@@ -421,9 +376,6 @@ export default class CarouselServicesMobile extends Component {
 										que haja a intervenção de um atendente humano. Pode ser
 										utilizada para diversas finalidades.
 									</p>
-									<LinkButton link="#" className="button">
-										Solicite um orçamento
-									</LinkButton>
 								</div>
 								<div className="image-handler">
 									<Image src={Ura} quality={100} />
@@ -444,9 +396,6 @@ export default class CarouselServicesMobile extends Component {
 										para gerar aproximação, ao mesmo tempo em que facilita a
 										gestão e potencializa a produtividade das operações.
 									</p>
-									<LinkButton link="#" className="button">
-										Solicite um orçamento
-									</LinkButton>
 								</div>
 								<div className="image-handler">
 									<Image src={Wpp} quality={100} />
@@ -467,9 +416,6 @@ export default class CarouselServicesMobile extends Component {
 										tempo humanizado. Trata-se de uma das ferramentas mais
 										tradicionais e com melhor aceitação do mercado.
 									</p>
-									<LinkButton link="#" className="button">
-										Solicite um orçamento
-									</LinkButton>
 								</div>
 								<div className="image-handler">
 									<Image src={Chat} quality={100} />
@@ -491,9 +437,6 @@ export default class CarouselServicesMobile extends Component {
 										permite o controle de todas as demandas, dando ao usuário
 										total autonomia.
 									</p>
-									<LinkButton link="#" className="button">
-										Solicite um orçamento
-									</LinkButton>
 								</div>
 								<div className="image-handler">
 									<Image src={email} quality={100} />
@@ -515,9 +458,6 @@ export default class CarouselServicesMobile extends Component {
 										haver algum erro de comunicação é muito menor. A resolução
 										ocorre já na primeira chamada.
 									</p>
-									<LinkButton link="#" className="button">
-										Solicite um orçamento
-									</LinkButton>
 								</div>
 								<div className="image-handler">
 									<Image src={VideoCall} quality={100} />
@@ -539,9 +479,6 @@ export default class CarouselServicesMobile extends Component {
 										rápidos. Totalmente customizável, essa solução interativa
 										possibilita impactar até 100% dos usuários mobile.
 									</p>
-									<LinkButton link="#" className="button">
-										Solicite um orçamento
-									</LinkButton>
 								</div>
 								<div className="image-handler">
 									<Image src={Webview} quality={100} />
@@ -562,9 +499,6 @@ export default class CarouselServicesMobile extends Component {
 										Do planejamento à execução, estamos preparados para
 										atendê-la.
 									</p>
-									<LinkButton link="#" className="button">
-										Solicite um orçamento
-									</LinkButton>
 								</div>
 								<div className="image-handler">
 									<Image src={SpecialProjects} quality={100} />

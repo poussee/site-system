@@ -22,7 +22,7 @@ export const Container = styled.div`
 	background-image: url(./assets/BG_Menu.png);
 	background-size: cover;
 	background-repeat: no-repeat;
-	z-index: 9999;
+	z-index: 9998;
 `;
 
 export const Content = styled.div`

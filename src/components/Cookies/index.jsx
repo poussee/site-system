@@ -29,7 +29,7 @@ function Cookies() {
 							e sessões de uso, armazenar conteúdo, acompanhar o comportamento
 							do público para monitorar as atividades do site e otimizar a sua
 							experiência. Em caso de dúvidas, leia nossa{' '}
-							<Link href="#">
+							<Link href="/politica-de-privacidade">
 								<a>Política de Privacidade</a>
 							</Link>
 							.

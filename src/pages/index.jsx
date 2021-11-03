@@ -73,7 +73,7 @@ export default function Home() {
 									soluções para atender às necessidades de cada empresa.
 								</p>
 
-								<LinkButton className={'yellowButton'} link={'#'}>
+								<LinkButton className={'yellowButton'} link={'/quem-somos'}>
 									Conheça nossa história
 								</LinkButton>
 							</div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'next/link';
+import { MdDoubleArrow } from 'react-icons/md';
 
 import * as S from './style';
 
@@ -15,9 +15,9 @@ const Banner = (props) => {
 					{props.subtitle}
 				</p>
 				{props.button != null && (
-					<Link href="/contato">
-						<a className="button">{props.button}</a>
-					</Link>
+					<a href="https://forms.office.com/r/zJJFpCeY63" className="button">
+						{props.button} <MdDoubleArrow />
+					</a>
 				)}
 			</S.Content>
 		</S.Container>

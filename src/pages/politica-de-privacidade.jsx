@@ -1,4 +1,5 @@
 import Link from 'next/dist/client/link';
+import Head from 'next/head';
 
 import Banner from '../components/Banners/Banner';
 
@@ -9,19 +10,22 @@ import * as S from '../styles/politica-de-privacidade';
 export default function politica() {
 	return (
 		<>
+			<Head>
+				<title>System | Política de privacidade</title>
+			</Head>
 			<Banner
 				className="banner"
 				background={bannerBackground}
-				title="Politica de privacidade"
+				title="Política de privacidade"
 				service={true}
 			/>
 			<S.Container>
 				<S.Content>
 					<p>
-						A sua privacidade é importante para nós. É política do UFA
-						Hospitalar respeitar a sua privacidade em relação a qualquer
-						informação sua que possamos coletar no site UFA Hospitalar, e outros
-						sites que possuímos e operamos.
+						A sua privacidade é importante para nós. É política da System
+						respeitar a sua privacidade em relação a qualquer informação sua que
+						possamos coletar no site da System , e outros sites que possuímos e
+						operamos.
 					</p>
 					<p>
 						Solicitamos informações pessoais apenas quando realmente precisamos
@@ -37,11 +41,7 @@ export default function politica() {
 						O nosso site pode ter links para sites externos que não são operados
 						por nós. Esteja ciente de que não temos controle sobre o conteúdo e
 						práticas desses sites e não podemos aceitar responsabilidade por
-						suas respectivas{' '}
-						<Link href="/politica-de-privacidade">
-							<a>políticas de privacidade</a>
-						</Link>
-						.
+						suas respectivas <strong>políticas de privacidade</strong>.
 					</p>
 					<p>
 						Você é livre para recusar a nossa solicitação de informações
@@ -57,7 +57,7 @@ export default function politica() {
 					<h3>Compromisso do Usuário</h3>
 					<p>
 						O usuário se compromete a fazer uso adequado dos conteúdos e da
-						informação que o{' '}
+						informação que a{' '}
 						<Link href="/">
 							<a>System</a>
 						</Link>{' '}
@@ -77,10 +77,10 @@ export default function politica() {
 						</li>
 						<li>
 							C) Não causar danos aos sistemas físicos (hardwares) e lógicos
-							(softwares) do UFA Hospitalar, de seus fornecedores ou terceiros,
-							para introduzir ou disseminar vírus informáticos ou quaisquer
-							outros sistemas de hardware ou software que sejam capazes de
-							causar danos anteriormente mencionados.
+							(softwares) da System , de seus fornecedores ou terceiros, para
+							introduzir ou disseminar vírus informáticos ou quaisquer outros
+							sistemas de hardware ou software que sejam capazes de causar danos
+							anteriormente mencionados.
 						</li>
 					</ul>
 					<h3>Mais informações</h3>

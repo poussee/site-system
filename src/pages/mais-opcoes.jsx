@@ -1,5 +1,6 @@
 import Image from 'next/dist/client/image';
 import { useState, useEffect } from 'react';
+import Head from 'next/head';
 
 import Banner from '../components/Banners/Banner';
 import CustomerComments from '../components/CustomerComments';
@@ -30,6 +31,9 @@ export default function QuemSomos() {
 
 	return (
 		<>
+			<Head>
+				<title>System | Mais opções</title>
+			</Head>
 			<Banner
 				className="banner"
 				background={bannerBackground}
@@ -74,14 +78,14 @@ export default function QuemSomos() {
 			) : (
 				<CarouselServicesMobile />
 			)}
-			<CustomerComments
+			{/* <CustomerComments
 				BackgroundImage={CustomerCommentsBackground}
 				dif={true}
 				authorName={'ALBERTO PEREIRA'}
 				authorJob={'Diretor de produção'}
 				authorEnterprise={'Empresa X'}
 				authorFoto={FotoDepoimento}
-			/>
+			/> */}
 			<S.FormContainer>
 				<S.FormContent>
 					<div className="form-image">

@@ -38,6 +38,8 @@ export const Content = styled.div`
 	}
 
 	.button {
+		display: flex;
+		align-items: flex-end;
 		width: fit-content;
 		margin-top: 20px;
 		padding: 10px 20px;
@@ -45,5 +47,9 @@ export const Content = styled.div`
 		border: 1px solid var(--yellow);
 		border-radius: 10px;
 		color: black;
+
+		svg {
+			margin-left: 5px;
+		}
 	}
 `;

@@ -1,5 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/dist/client/link';
+import Head from 'next/head';
+import LinkButton from '../components/LinkButton';
 
 import Banner from '../components/Banners/Banner';
 import GoogleMaps from '../components/Map';
@@ -18,6 +20,9 @@ import * as S from '../styles/trabalhe-conosco';
 export default function TrabalheConosco() {
 	return (
 		<>
+			<Head>
+				<title>System | Trabalhe Conosco</title>
+			</Head>
 			<Banner
 				className="banner"
 				background={bannerBackground}
@@ -118,9 +123,7 @@ export default function TrabalheConosco() {
 							Se você também deseja ser protagonista na construção do futuro da
 							experiência do cliente, faça parte do nosso time!
 						</p>
-						<Link href="/contato">
-							<a>Trabalhe conosco</a>
-						</Link>
+						<LinkButton link="/contato">Trabalhe conosco</LinkButton>
 					</div>
 					<div className="image-handler">
 						<Image src={speacilist} quality={100} />
@@ -136,6 +139,7 @@ export default function TrabalheConosco() {
 									<h4>ONDE ESTAMOS</h4>
 									<S.Divisor maxWidth="60px" color="white" />
 								</div>
+								<p>Av. Dr. Mauro Lindemberg Monteiro, 185</p>
 								<p>Galpões 1, 2 e 19, Jardim Santa Fé</p>
 								<p>Osasco - São Paulo</p>
 								<p>CEP 06278-010</p>
@@ -186,7 +190,7 @@ export default function TrabalheConosco() {
 						</p>
 						<div>
 							<Link href="/politica-de-privacidade">
-								<a>Política de privacidade</a>
+								<a>Política de Privacidade</a>
 							</Link>
 						</div>
 					</div>

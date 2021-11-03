@@ -1,4 +1,5 @@
 import Image from 'next/dist/client/image';
+import Head from 'next/head';
 
 import Banner from '../components/Banners/Banner';
 import HistoryCarousel from '../components/CarouselHistory';
@@ -19,6 +20,9 @@ import * as S from '../styles/quem-somos';
 export default function QuemSomos() {
 	return (
 		<>
+			<Head>
+				<title>System | Quem somos</title>
+			</Head>
 			<Banner
 				className="banner"
 				background={bannerBackground}
@@ -110,7 +114,10 @@ export default function QuemSomos() {
 								aqui.
 							</p>
 							<div className="button-holder">
-								<LinkButton link={'#'} className={'yellowButton'}>
+								<LinkButton
+									link={'/trabalhe-conosco'}
+									className={'yellowButton'}
+								>
 									Vem ser System
 								</LinkButton>
 							</div>

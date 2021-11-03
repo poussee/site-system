@@ -1,10 +1,12 @@
 import Image from 'next/image';
+import Head from 'next/head';
 
 import Banner from '../components/Banners/Banner';
 import bannerBackground from '../../public/assets/banners/banner-contato.png';
 import Form from '../components/Form';
 import Tour from '../components/Tour';
 import GoogleMaps from '../components/Map';
+import LinkButton from '../components/LinkButton';
 
 import * as S from '../styles/contato';
 
@@ -13,6 +15,9 @@ import FormImage from '../../public/assets/contato/Imagem_entre_em_contato.png';
 export default function Contato() {
 	return (
 		<>
+			<Head>
+				<title>System | Contato</title>
+			</Head>
 			<Banner
 				className="banner"
 				background={bannerBackground}
@@ -46,7 +51,7 @@ export default function Contato() {
 						<p>Sua carreira de sucesso começa aqui.</p>
 						<p>Seja protagonista na transformação das interações.</p>
 					</div>
-					<a>Vem ser System</a>
+					<LinkButton link="/trabalhe-conosco">Vem ser System</LinkButton>
 				</S.WorkWithUs>
 			</S.BlackContainer>
 			<S.MapContainer>
@@ -57,6 +62,7 @@ export default function Contato() {
 							<div className="pink-divisor"></div>
 						</div>
 						<div>
+							<p>Av. Dr. Mauro Lindemberg Monteiro, 185</p>
 							<p>Galpões 1, 2 e 19, Jardim Santa Fé</p>
 							<p>Osasco - São Paulo</p>
 							<p>CEP 06278-010</p>

@@ -198,7 +198,7 @@ const Footer = () => {
 				<div className="flex-column">
 					<div>
 						<h4>Trabalhe conosco</h4>
-						<LinkButton className={'yellowButton'} link={'#'}>
+						<LinkButton className={'yellowButton'} link={'/trabalhe-conosco'}>
 							Vem ser System
 						</LinkButton>
 					</div>
@@ -219,7 +219,7 @@ const Footer = () => {
 				</p>
 				<div>
 					<Link href="/politica-de-privacidade">
-						<a>Política de privacidade</a>
+						<a>Política de Privacidade</a>
 					</Link>
 				</div>
 			</S.Content>

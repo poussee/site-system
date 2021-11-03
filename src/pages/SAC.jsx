@@ -1,4 +1,5 @@
 import Image from 'next/dist/client/image';
+import Head from 'next/head';
 
 import Banner from '../components/Banners/Banner';
 import CustomerComments from '../components/CustomerComments';
@@ -25,6 +26,9 @@ import * as S from '../styles/servicesCommonStyle';
 export default function QuemSomos() {
 	return (
 		<>
+			<Head>
+				<title>System | SAC</title>
+			</Head>
 			<Banner
 				className="banner"
 				background={bannerBackground}
@@ -70,13 +74,13 @@ export default function QuemSomos() {
 				eighthImage={NPSImage}
 				eighthDescription={'NPS acima da média do mercado'}
 			/>
-			<CustomerComments
+			{/* <CustomerComments
 				BackgroundImage={CustomerCommentsBackground}
 				authorName={'ALBERTO PEREIRA'}
 				authorJob={'Diretor de produção'}
 				authorEnterprise={'Empresa X'}
 				authorFoto={FotoDepoimento}
-			/>
+			/> */}
 			<S.FormContainer>
 				<S.FormContent>
 					<div className="form-image">
