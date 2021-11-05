@@ -6,7 +6,7 @@ import LinkButton from '../components/LinkButton';
 import Banner from '../components/Banners/Banner';
 import GoogleMaps from '../components/Map';
 
-import bannerBackground from '../../public/assets/banners/banner-trabalhe-conosco.png';
+import bannerBackground from '../../public/assets/banners/banner-trabalhe-conosco.jpg';
 import teamSystem from '../../public/assets/trabalhe-conosco/time.png';
 import systemVideo from '../../public/assets/trabalhe-conosco/Video.png';
 import togetherSystem from '../../public/assets/trabalhe-conosco/Juntos-somos-system.png';
