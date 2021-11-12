@@ -95,7 +95,7 @@ export default function Form(props) {
 						required
 					></input>
 					<input
-						placeholder="enterprise*"
+						placeholder="Empresa*"
 						onChange={(e) => setEmpresa(e.target.value)}
 						required
 					></input>
