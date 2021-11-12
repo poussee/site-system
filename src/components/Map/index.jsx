@@ -8,7 +8,7 @@ export default function GoogleMaps() {
 	return (
 		<Map
 			provider={osm}
-			height={200}
+			height={280}
 			defaultCenter={[-23.482777365733014, -46.77427577636617]}
 			defaultZoom={16}
 		/>
