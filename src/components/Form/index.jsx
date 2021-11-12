@@ -16,7 +16,7 @@ export default function Form(props) {
 	const [name, setName] = useState('');
 	const [email, setEmail] = useState('');
 	const [telephone, setTelephone] = useState('');
-	const [empresa, setEmpresa] = useState('');
+	const [enterprise, setEmpresa] = useState('');
 	const [cargo, setCargo] = useState('');
 	const [message, setMessage] = useState('');
 	const [sent, setSent] = useState('');
@@ -42,7 +42,15 @@ export default function Form(props) {
 		if (subject.id === 0) {
 			setSubjectError(true);
 		} else {
-			const data = { name, email, telephone, empresa, cargo, message, subject };
+			const data = {
+				name,
+				email,
+				telephone,
+				enterprise,
+				cargo,
+				message,
+				subject,
+			};
 
 			axios
 				.post('http://localhost:5000/send_mail', data)
@@ -87,7 +95,7 @@ export default function Form(props) {
 						required
 					></input>
 					<input
-						placeholder="Empresa*"
+						placeholder="enterprise*"
 						onChange={(e) => setEmpresa(e.target.value)}
 						required
 					></input>
@@ -151,7 +159,7 @@ export default function Form(props) {
 						</label>
 					</div>
 					<div className="home-form-button-container">
-						<button>Enviar</button>
+						<button type="submit">Enviar</button>
 					</div>
 				</form>
 			</S.FormContainer>

@@ -208,11 +208,18 @@ export const Specialist = styled.div`
 		}
 
 		a {
+			display: flex;
+			align-items: flex-end;
+			width: fit-content;
 			color: white;
 			padding: 10px 20px;
 			border: 1px solid #b61f6c;
 			border-radius: 10px;
 			background: #b61f6c;
+
+			svg {
+				margin-left: 5px;
+			}
 		}
 	}
 

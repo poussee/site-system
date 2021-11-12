@@ -14,6 +14,7 @@ import togetherPictures from '../../public/assets/trabalhe-conosco/Imagem_Respei
 import systemLife from '../../public/assets/trabalhe-conosco/Imagem_Vida-plena.png';
 import speacilist from '../../public/assets/trabalhe-conosco/Imagem_Seja-especialista.png';
 import logoRodape from '../../public/assets/Logo-Rodape.png';
+import { MdDoubleArrow } from 'react-icons/md';
 
 import * as S from '../styles/trabalhe-conosco';
 
@@ -123,7 +124,9 @@ export default function TrabalheConosco() {
 							Se você também deseja ser protagonista na construção do futuro da
 							experiência do cliente, faça parte do nosso time!
 						</p>
-						<LinkButton link="/contato">Trabalhe conosco</LinkButton>
+						<a href="https://forms.office.com/r/zJJFpCeY63">
+							Trabalhe conosco <MdDoubleArrow />
+						</a>
 					</div>
 					<div className="image-handler">
 						<Image src={speacilist} quality={100} />
